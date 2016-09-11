@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+  <html ng-app="myApp">
+    <head>
+      <meta charset="utf-8">
+      <title>Justin Doty</title>
+      <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+      <script src="/vendors/angular/angular.min.js"></script>
+      <script src="/vendors/angular-route/angular-route.min.js"></script>
+      <script src="/vendors/try.js"></script>
+      <script src="/client/myApp.module.js"></script>
+      <script src="/client/myApp.config.js"></script>
+      <script src="/client/MainController.js"></script>
+      <script src="/client/HomeController.js"></script>
+      <script src="/client/RouteService.js"></script>
+      <link rel="stylesheet" href="css/styles.css" />
+      <base href="/" />
+    </head>
+      <body ng-controller="MainController as main">
+        <div class="wrapper">
+          <header>
+            <h1>Justin Doty</h1>
+            <div class="nav">
+              <h2 ng-click="main.homeRoute()">Home</h2>
+              <h2 ng-click="main.portfolioRoute()">Portfolio</h2>
+              <h2 ng-click="main.aboutRoute()">About</h2>
+              <h2 ng-click="main.contactRoute()">Contact</h2>
+            </div>
+          </header>
+          <div ng-view>
+          </div>
+        </div>
+      </body>
+  </html>
