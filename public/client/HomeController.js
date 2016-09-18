@@ -2,6 +2,5 @@ angular.module('myApp').controller('HomeController', ['$http', '$location', func
 
   var vm = this;
 
-  vm.test="Am I getting this?";
 
 }]);

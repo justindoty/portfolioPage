@@ -2,15 +2,22 @@
   <html ng-app="myApp">
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Justin Doty</title>
       <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+      <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" />
       <script src="/vendors/angular/angular.min.js"></script>
+      <script src="/vendors/angular-animate/angular-animate.min.js"></script>
+      <!-- <script src="/vendors/angular-ui-bootstrap/ui-bootstrap.js"></script> -->
       <script src="/vendors/angular-route/angular-route.min.js"></script>
       <script src="/vendors/try.js"></script>
       <script src="/client/myApp.module.js"></script>
       <script src="/client/myApp.config.js"></script>
       <script src="/client/MainController.js"></script>
+      <script src="/client/AboutController.js"></script>
       <script src="/client/HomeController.js"></script>
+      <script src="/client/ContactController.js"></script>
+      <script src="/client/WorkController.js"></script>
       <script src="/client/RouteService.js"></script>
       <link rel="stylesheet" href="css/styles.css" />
       <base href="/" />
@@ -18,16 +25,72 @@
       <body ng-controller="MainController as main">
         <div class="wrapper">
           <header>
-            <h1>Justin Doty</h1>
+            <h1 class="nameLink" ng-click="main.homeRoute()">Justin Doty</h1>
             <div class="nav">
-              <h2 ng-click="main.homeRoute()">Home</h2>
-              <h2 ng-click="main.portfolioRoute()">Portfolio</h2>
-              <h2 ng-click="main.aboutRoute()">About</h2>
               <h2 ng-click="main.contactRoute()">Contact</h2>
+              <h2 ng-click="main.workRoute()">Work</h2>
+              <h2 ng-click="main.aboutRoute()">About</h2>
             </div>
           </header>
-          <div ng-view>
-          </div>
+          <section class="home">
+            <div class="homeBGimage">
+              <div class="homeContent">
+                <h1>Hello. My name is Justin Doty. This page is where I post some of my work and a little about myself. If you have and questions, feel free to contact me. Thank you for stopping by. <br /><br />-Justin</h1>
+              </div>
+
+            </div>
+          </section>
+          <section class="about">
+            <!-- <div class="aboutPage"> -->
+              <div class="aboutImage1">
+                <img id="homeImage" src="/assets/JustinDoty.jpg" alt="picture of justin doty"/>
+              </div>
+            <div class="aboutMeDiv">
+              <h1>About Me</h1>
+              <br /><br />
+              <h2>I am a full stack software engineering graduate of Prime Digital Academy. I have a passion for front-end develoment, and love building useful as well as beautiful appications.</h2>
+              <br/><br/>
+              <h2>I love meeting new clients and helping them turn their ideas into reality. I believe that with dedication, honesty, loyalty, a great team, and laughter, anything is possible.</h2>
+            <!-- </div> -->
+            </div>
+          </section>
+          <section class="work">
+            <div class="projectsLeft">
+              <h1>Projects</h1>
+              <h2 ng-click="main.projectClick('golf')">GOLF USA</h2>
+              <div class="description" ng-show="main.showProject.golf">
+                <h2>This application was built for a local Minnesota golf retail store. The store had a sales reward program that customers could participate in to earn money off future purchases. The store used paper punch cards to keep track of these rewards. For every $10 a customer spends they receive a punch, after they accumulted 15 punches(fill up a card), they recieve $10 of their next purchase. This was a hastle to maintain and manage especially when some customers would accumulate 10 or more cards in a single purchase.</h2>
+              </div>
+
+              <h2 ng-click="main.projectClick('cti')">Compatible Technologies International</h2>
+
+              <h2>More coming soon...</h2>
+            </div>
+            <div class="displayProjectsRight">
+              <div class="monitorDisplay">
+                <div id="golf" ng-show="main.showProject.golf">
+                  <button id="nextImage" ng-click="main.nextGolfImage()">Next</button>
+                  <img ng-src="{{main.golfImages}}" />
+                </div>
+                <div id="cti" ng-show="main.showProject.cti">
+                  <button id="nextImage" ng-click="main.nextCtiImage()">Next</button>
+                  <img ng-src="{{main.ctiImages}}" />
+                </div>
+              </div>
+            </div>
+
+
+
+          </section>
+          <section class="contact">
+            <h1>Contact Me</h1>
+          </section>
+          <footer>
+            <h1>CONTACT INFORMATION</h1>
+          </footer>
+
+          <!-- <div ng-view>
+          </div> -->
         </div>
       </body>
   </html>
