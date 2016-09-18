@@ -2,22 +2,22 @@ angular.module('myApp').config(['$routeProvider', '$locationProvider', function(
   $routeProvider
   .when('/home', {
     templateUrl: '/views/home.html',
-    controller: 'HomeController',
+    controller: 'homeController',
     controllerAs: 'home'
   })
   .when('/about', {
     templateUrl: '/views/about.html',
-    controller: 'AboutController',
+    controller: 'aboutController',
     controllerAs: 'about'
   })
   .when('/work', {
     templateUrl: '/views/work.html',
-    controller: 'WorkController',
+    controller: 'workController',
     controllerAs: 'work'
   })
   .when('/contact', {
     templateUrl: '/views/contact.html',
-    controller: 'ContactController',
+    controller: 'contactController',
     controllerAs: 'contact'
   })
 
