@@ -1,4 +1,4 @@
-angular.module('myApp').factory('RouteService', ['$location', function ($location){
+angular.module('app').factory('RouteService', ['$location', function ($location){
 
 
 function homeRoute() {

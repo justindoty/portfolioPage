@@ -1,4 +1,4 @@
-angular.module('myApp').controller('WorkController', ['$http', '$location', function($http, $location){
+angular.module('app').controller('WorkController', ['$http', '$location', function($http, $location){
 
   var vm = this;
 
