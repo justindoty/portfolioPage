@@ -197,8 +197,9 @@ header {
 }
 .displayProjectsRight {
   width: auto;
-  padding: 20px;
   display: flex;
+  padding-right: 30px;
+  margin-right: 5px;
   /*justify-content: center;*/
   height: 100%;
   /*align-items: center;*/
@@ -214,7 +215,7 @@ header {
   height: 380px;
   width: 667px;
   display: flex;
-  margin: 4px 0 0 4px;
+  margin: 24px 0 0 24px;
   overflow: hidden;
 }
 #golf {
