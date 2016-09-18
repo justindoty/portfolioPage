@@ -1,4 +1,4 @@
-angular.module('myApp').controller('mainController', ['$http','$location','RouteService', function($http,$location, RouteService){
+angular.module('myApp').controller('MainController', ['$http','$location','RouteService', function($http,$location, RouteService){
   var vm = this;
 
 
