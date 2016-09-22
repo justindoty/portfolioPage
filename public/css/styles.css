@@ -621,6 +621,7 @@ footer h1 {
     .monitorDisplay button {
         position: absolute;
         background-color: transparent;
+        display: inline-block;
         border: none;
         top: 50%;
         font-size: 5em;
@@ -632,10 +633,14 @@ footer h1 {
         text-decoration: none;
     }
     .glyphicon-chevron-left {
+        height: auto;
+        width: auto;
         position: relative;
         left: -3%;
     }
     .glyphicon-chevron-right {
+        height: auto;
+        width: auto;
         position: relative;
         left: 90%;
     }
