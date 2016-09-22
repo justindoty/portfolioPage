@@ -113,7 +113,7 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
       vm.ctiDesc = ctiDesc.desc[ctiNum];
     }
     vm.nextCtiImageB = function() {
-      ctiNum++;
+      ctiNum--;
       if (ctiNum < 0) {
         ctiNum = 3;
       }
