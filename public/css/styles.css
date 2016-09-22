@@ -253,30 +253,31 @@ header {
     height: 100%;
     width: 100%;
 }
-
-.monitorDisplay button {
-    position: absolute;
-    background-color: transparent;
-    height: 2em;
-    width: 2em;
-    border: none;
-    top: 50%;
-    font-size: 5em;
-    z-index: 2;
-}
-
 .monitorDisplay button:focus {
     outline: 0;
     text-decoration: none;
 }
-.glyphicon-chevron-left {
-    position: relative;
-    left: -2%;
+
+.buttonDiv button {
+    background-color: transparent;
+    border: none;
 }
-.glyphicon-chevron-right {
-    position: relative;
-    left: 88%;
+.buttonDiv {
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  width: 100%;
 }
+
+#forward {
+  float: right;
+  font-size: 5em;
+}
+#back {
+  float: left;
+  font-size: 5em;
+}
+
 
 #cti img {
     height: 100%;
@@ -452,27 +453,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    .monitorDisplay button {
-        position: absolute;
-        background-color: transparent;
-        border: none;
-        top: 50%;
-        font-size: 5em;
-        z-index: 2;
-    }
-
-    .monitorDisplay button:focus {
-        outline: 0;
-        text-decoration: none;
-    }
-
-    .glyphicon-chevron-right {
-        position: relative;
-        left: 91%;
-    }
     #cti img {
         height: 100%;
         width: 100%;
+    }
+    .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      width: 100%;
+    }
+    #forward {
+      float: right;
+      font-size: 6em;
+    }
+    #back {
+      float: left;
+      font-size: 6em;
     }
     /*~~~~~~~~~~~CONTACT PAGE~~~~~~~~*/
     .contact {
@@ -619,37 +616,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    .monitorDisplay button {
-        position: absolute;
-        background-color: transparent;
-        display: inline-block;
-        border: none;
-        top: 50%;
-        font-size: 5em;
-        z-index: 2;
-    }
-
-    .monitorDisplay button:focus {
-        outline: 0;
-        text-decoration: none;
-    }
-    .glyphicon-chevron-left {
-        display: inline-block;
-        height: 2em;
-        width: 2em;
-        position: relative;
-        left: -3%;
-    }
-    .glyphicon-chevron-right {
-        display: inline-block;
-        height: 2em;
-        width: 2em;
-        position: relative;
-        left: 90%;
-    }
     #cti img {
         width: 100%;
         height: 100%;
+    }
+    .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      width: 100%;
+    }
+    #forward {
+      float: right;
+      font-size: 4em;
+    }
+    #back {
+      float: left;
+      font-size: 4em;
     }
     .contact {
         display: block;
@@ -795,30 +778,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    .monitorDisplay button {
-        position: absolute;
-        background-color: transparent;
-        border: none;
-        top: 40%;
-        font-size: 5em;
-        z-index: 2;
-    }
-
-    .monitorDisplay button:focus {
-        outline: 0;
-        text-decoration: none;
-    }
-    .glyphicon-chevron-left {
-        position: relative;
-        left: -5%;
-    }
-    .glyphicon-chevron-right {
-        position: relative;
-        left: 87%;
-    }
     #cti img {
         width: 100%;
         height: 100%;
+    }
+    .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      width: 100%;
+    }
+    #forward {
+      float: right;
+      font-size: 4em;
+    }
+    #back {
+      float: left;
+      font-size: 4em;
     }
     .contact {
         display: block;
@@ -947,27 +923,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    .monitorDisplay button {
-        position: absolute;
-        background-color: transparent;
-        border: none;
-        top: 50%;
-        font-size: 5em;
-        z-index: 2;
-    }
-
-    .monitorDisplay button:focus {
-        outline: 0;
-        text-decoration: none;
-    }
-
-    .glyphicon-chevron-right {
-        position: relative;
-        left: 89%;
-    }
     #cti img {
         width: 100%;
         height: 100%;
+    }
+    .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 40%;
+      width: 100%;
+    }
+    #forward {
+      float: right;
+      font-size: 3em;
+    }
+    #back {
+      float: left;
+      font-size: 3em;
     }
     .contact {
         display: block;
@@ -1098,27 +1070,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    .monitorDisplay button {
-        position: absolute;
-        background-color: transparent;
-        border: none;
-        top: 40%;
-        font-size: 5em;
-        z-index: 2;
-    }
-
-    .monitorDisplay button:focus {
-        outline: 0;
-        text-decoration: none;
-    }
-
-    .glyphicon-chevron-right {
-        position: relative;
-        left: 89%;
-    }
     #cti img {
         width: 100%;
         height: 100%;
+    }
+    .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 40%;
+      width: 100%;
+    }
+    #forward {
+      float: right;
+      font-size: 3em;
+    }
+    #back {
+      float: left;
+      font-size: 3em;
     }
     .contact {
         display: block;
@@ -1261,31 +1229,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    .monitorDisplay button {
-        position: absolute;
-        background-color: transparent;
-
-        border: none;
-        top: 30%;
-        font-size: 4em;
-        z-index: 2;
-    }
-
-    .monitorDisplay button:focus {
-        outline: 0;
-        text-decoration: none;
-    }
-    .glyphicon-chevron-left {
-        position: relative;
-        left: -7%;
-    }
-    .glyphicon-chevron-right {
-        position: relative;
-        left: 80%;
-    }
     #cti img {
         width: 100%;
         height: 100%;
+    }
+    .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 40%;
+      width: 100%;
+    }
+    #forward {
+      float: right;
+      font-size: 3em;
+    }
+    #back {
+      float: left;
+      font-size: 3em;
     }
     .contact {
         display: block;
@@ -1416,26 +1376,19 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    .monitorDisplay button {
-        position: absolute;
-        background-color: transparent;
-        border: none;
-        top: 32%;
-        font-size: 5em;
-        z-index: 2;
+    .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 40%;
+      width: 100%;
     }
-
-    .monitorDisplay button:focus {
-        outline: 0;
-        text-decoration: none;
+    #forward {
+      float: right;
+      font-size: 3em;
     }
-    .glyphicon-chevron-left {
-        position: relative;
-        left: -5%;
-    }
-    .glyphicon-chevron-right {
-        position: relative;
-        left: 85%;
+    #back {
+      float: left;
+      font-size: 3em;
     }
     #cti img {
         width: 100%;
