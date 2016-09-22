@@ -446,10 +446,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    #nextImage {
+    .monitorDisplay button {
         position: absolute;
-        display: inline-block;
+        background-color: transparent;
+        border: none;
+        top: 50%;
+        font-size: 5em;
         z-index: 2;
+    }
+
+    .monitorDisplay button:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .glyphicon-chevron-right {
+        position: absolute;
+        left: 91%;
     }
     #cti img {
         height: 100%;
@@ -600,10 +613,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    #nextImage {
+    .monitorDisplay button {
         position: absolute;
-        display: inline-block;
+        background-color: transparent;
+        border: none;
+        top: 50%;
+        font-size: 5em;
         z-index: 2;
+    }
+
+    .monitorDisplay button:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .glyphicon-chevron-right {
+        position: absolute;
+        left: 92%;
     }
     #cti img {
         width: 100%;
@@ -708,7 +734,7 @@ footer h1 {
     .projectsLeft {
         display: block;
         width: 100%;
-        height: 40%;
+        height: auto;
     }
     .projectsLeft h1 {
         display: block;
@@ -753,10 +779,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    #nextImage {
+    .monitorDisplay button {
         position: absolute;
-        display: inline-block;
+        background-color: transparent;
+        border: none;
+        top: 50%;
+        font-size: 5em;
         z-index: 2;
+    }
+
+    .monitorDisplay button:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .glyphicon-chevron-right {
+        position: absolute;
+        left: 90%;
     }
     #cti img {
         width: 100%;
@@ -849,7 +888,7 @@ footer h1 {
         font-size: 1.6em;
     }
     .work {
-        height: 220%;
+        height: 250%;
         display: block;
     }
     .projectsLeft {
@@ -872,7 +911,7 @@ footer h1 {
     }
     .displayProjectsRight {
         width: 80%;
-        height: 60%;
+        height: 50%;
         display: block;
         margin-left: 10%;
     }
@@ -889,10 +928,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    #nextImage {
+    .monitorDisplay button {
         position: absolute;
-        display: inline-block;
+        background-color: transparent;
+        border: none;
+        top: 50%;
+        font-size: 5em;
         z-index: 2;
+    }
+
+    .monitorDisplay button:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .glyphicon-chevron-right {
+        position: absolute;
+        left: 89%;
     }
     #cti img {
         width: 100%;
@@ -1027,10 +1079,23 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    #nextImage {
+    .monitorDisplay button {
         position: absolute;
-        display: inline-block;
+        background-color: transparent;
+        border: none;
+        top: 40%;
+        font-size: 5em;
         z-index: 2;
+    }
+
+    .monitorDisplay button:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    .glyphicon-chevron-right {
+        position: absolute;
+        left: 89%;
     }
     #cti img {
         width: 100%;
@@ -1175,10 +1240,26 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    #nextImage {
+    .monitorDisplay button {
         position: absolute;
-        display: inline-block;
+        background-color: transparent;
+        border: none;
+        top: 40%;
+        font-size: 4em;
         z-index: 2;
+    }
+
+    .monitorDisplay button:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+    .glyphicon-chevron-left {
+        position: absolute;
+        left: -3%;
+    }
+    .glyphicon-chevron-right {
+        position: absolute;
+        left: 85%;
     }
     #cti img {
         width: 100%;
@@ -1273,7 +1354,7 @@ footer h1 {
         font-size: 1.6em;
     }
     .work {
-        height: 220%;
+        height: 300%;
         display: block;
     }
     .projectsLeft {
@@ -1296,7 +1377,7 @@ footer h1 {
     }
     .displayProjectsRight {
         width: 80%;
-        height: 60%;
+        height: 50%;
         display: block;
         margin-left: 10%;
     }
@@ -1313,10 +1394,26 @@ footer h1 {
         height: 100%;
         width: 100%;
     }
-    #nextImage {
+    .monitorDisplay button {
         position: absolute;
-        display: inline-block;
+        background-color: transparent;
+        border: none;
+        top: 40%;
+        font-size: 5em;
         z-index: 2;
+    }
+
+    .monitorDisplay button:focus {
+        outline: 0;
+        text-decoration: none;
+    }
+    .glyphicon-chevron-left {
+        position: absolute;
+        left: -1%;
+    }
+    .glyphicon-chevron-right {
+        position: absolute;
+        left: 89%;
     }
     #cti img {
         width: 100%;
