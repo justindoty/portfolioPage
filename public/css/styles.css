@@ -256,6 +256,8 @@ header {
 .monitorDisplay button {
     position: absolute;
     background-color: transparent;
+    height: 2em;
+    width: 2em;
     border: none;
     top: 50%;
     font-size: 5em;
@@ -266,10 +268,13 @@ header {
     outline: 0;
     text-decoration: none;
 }
-
+.glyphicon-chevron-left {
+    position: relative;
+    left: -2%;
+}
 .glyphicon-chevron-right {
     position: relative;
-    left: 91%;
+    left: 88%;
 }
 
 #cti img {
@@ -626,10 +631,13 @@ footer h1 {
         outline: 0;
         text-decoration: none;
     }
-
+    .glyphicon-chevron-left {
+        position: relative;
+        left: -3%;
+    }
     .glyphicon-chevron-right {
         position: relative;
-        left: 92%;
+        left: 90%;
     }
     #cti img {
         width: 100%;
@@ -783,7 +791,7 @@ footer h1 {
         position: absolute;
         background-color: transparent;
         border: none;
-        top: 50%;
+        top: 40%;
         font-size: 5em;
         z-index: 2;
     }
@@ -792,10 +800,13 @@ footer h1 {
         outline: 0;
         text-decoration: none;
     }
-
+    .glyphicon-chevron-left {
+        position: relative;
+        left: -5%;
+    }
     .glyphicon-chevron-right {
         position: relative;
-        left: 90%;
+        left: 87%;
     }
     #cti img {
         width: 100%;
@@ -1174,17 +1185,19 @@ footer h1 {
         display: none;
     }
     .aboutMeDiv {
+        padding: 0;
         height: 90%;
         width: 100%;
         background-color: #4F9BFD;
     }
     .aboutMeDiv h1 {
-        padding-top: 0;
+        padding: 0;
         text-align: center;
         font-size: 2.5em;
         line-height: .5em;
     }
     .aboutMeDiv h2 {
+        padding: 0;
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
@@ -1243,8 +1256,9 @@ footer h1 {
     .monitorDisplay button {
         position: absolute;
         background-color: transparent;
+
         border: none;
-        top: 40%;
+        top: 30%;
         font-size: 4em;
         z-index: 2;
     }
@@ -1255,11 +1269,11 @@ footer h1 {
     }
     .glyphicon-chevron-left {
         position: relative;
-        left: -11%;
+        left: -7%;
     }
     .glyphicon-chevron-right {
         position: relative;
-        left: 76%;
+        left: 80%;
     }
     #cti img {
         width: 100%;
@@ -1398,7 +1412,7 @@ footer h1 {
         position: absolute;
         background-color: transparent;
         border: none;
-        top: 40%;
+        top: 32%;
         font-size: 5em;
         z-index: 2;
     }
@@ -1409,11 +1423,11 @@ footer h1 {
     }
     .glyphicon-chevron-left {
         position: relative;
-        left: -9%;
+        left: -5%;
     }
     .glyphicon-chevron-right {
         position: relative;
-        left: 80%;
+        left: 85%;
     }
     #cti img {
         width: 100%;
