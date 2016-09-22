@@ -1143,18 +1143,18 @@ footer h1 {
         display: table;
         height: 100px;
         width: 100px;
-        margin: 5% 0 0 0;
+        margin: 2% 0 0 0;
     }
     #firsta {
         margin-top: 10%;
         margin-left: 38%;
     }
     #linkedin {
-        padding-top: 30px;
+        padding-top: 40px;
         margin-left: 38%;
     }
     #github {
-        margin: 0 0 5% 38%;
+        margin: 0 0 10% 38%;
 
     }
     .contact img {
