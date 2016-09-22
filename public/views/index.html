@@ -11,8 +11,6 @@
       <script src="/assets/client.min.js"></script>
       <!-- <script src="/vendors/angular-animate/angular-animate.min.js"></script> -->
       <!-- <script src="/vendors/angular-ui-bootstrap/ui-bootstrap.js"></script> -->
-      <!-- <script src="/client/app.module.js"></script>
-      <script src="/client/app.config.js"></script> -->
       <link rel="stylesheet" href="css/styles.css" />
       <base href="/" />
     </head>
@@ -29,35 +27,43 @@
           <section class="home">
             <div class="homeBGimage">
               <div class="homeContent">
-                <h1>Hello. My name is Justin Doty. This page is where I post some of my work and a little about myself. If you have and questions, feel free to contact me. Thank you for stopping by. <br /><br />-Justin</h1>
+                <h1>Hello! My name is Justin. I'm a software developer in Minnesota. This page is still under constuction, but feel free to look around. <br />- Justin</h1>
               </div>
 
             </div>
           </section>
           <section class="about">
             <!-- <div class="aboutPage"> -->
-              <div class="aboutImage1">
-                <img id="homeImage" src="/assets/JustinDoty.jpg" alt="picture of justin doty"/>
-              </div>
+
             <div class="aboutMeDiv">
+              <div class="aboutImage1">
+
+                <img  src="/assets/JustinDoty.jpg" alt="picture of justindoty"/>
+
+              </div>
               <h1>About Me</h1>
               <br /><br />
-              <h2>I am a full stack software engineering graduate of Prime Digital Academy. I have a passion for front-end develoment, and love building useful as well as beautiful appications.</h2>
-              <br/><br/>
-              <h2>I love meeting new clients and helping them turn their ideas into reality. I believe that with dedication, honesty, loyalty, a great team, and laughter, anything is possible.</h2>
+              <h2>I'm a full stack software engineering graduate of Prime Digital Academy. I have a passion for software develoment especailly front-end development. I love building useful as well as beautiful appications. I love meeting new clients and helping them turn their ideas into reality. I believe that with dedication, honesty, loyalty, a great team, and laughter, anything is possible.</h2>
+              <br /><br />
+              <h2>When I'm not working I enjoy spending time with my amazing family, my girlfriend Nikki, and my dog Zoey. I love the outdoors and enjoy golfing, fishing, hockey, and good old bonfires. I'm also a huge movie fan and love great video games. </h2>
+
             <!-- </div> -->
             </div>
           </section>
           <section class="work">
             <div class="projectsLeft">
               <h1>Projects</h1>
-              <h2 ng-click="main.projectClick('golf')">GOLF USA</h2>
+              <button id="projectName" ng-click="main.projectClick('golf')">GOLF USA</button>
               <div class="description" ng-show="main.showProject.golf">
-                <h2>This application was built for a local Minnesota golf retail store. The store had a sales reward program that customers could participate in to earn money off future purchases. The store used paper punch cards to keep track of these rewards. For every $10 a customer spends they receive a punch, after they accumulted 15 punches(fill up a card), they recieve $10 of their next purchase. This was a hastle to maintain and manage especially when some customers would accumulate 10 or more cards in a single purchase.</h2>
+                <h2>{{main.gusaDesc}}</h2>
+                <h2 ng-show="main.showLink"><a href="https://golfusarewards.herokuapp.com/">GolfUSA Rewards App</a>
+                </h2>
               </div>
 
-              <h2 ng-click="main.projectClick('cti')">Compatible Technologies International</h2>
-
+              <button id="projectName" ng-click="main.projectClick('cti')">Compatible Technologies International</button>
+              <div class="description" ng-show="main.showProject.cti">
+                <h2>{{main.ctiDesc}}</h2>
+              </div>
               <h2>More coming soon...</h2>
             </div>
             <div class="displayProjectsRight">
@@ -72,15 +78,19 @@
                 </div>
               </div>
             </div>
-
-
-
           </section>
           <section class="contact">
-            <h1>Contact Me</h1>
+            <h1>Contact</h1>
+            <h2>Feel free to contact me if you have any questions or would like to connect.</h2>
+
+            <a id="firsta" href="mailto:justin@justindoty.com"><img src="/assets/emailicon.png" /></a>
+            <a id="linkedin" href="https://www.linkedin.com/in/justindoty1"><img src="/assets/linkedIn.png" alt="link to linked in" /></a>
+            <a id="github" href="https://github.com/justindoty"><img src="/assets/githublogo.png" alt="link to linked in" /></a>
+
           </section>
           <footer>
-            <h1>CONTACT INFORMATION</h1>
+            <h1>justin@justindoty.com</h1>
+
           </footer>
 
           <!-- <div ng-view>
