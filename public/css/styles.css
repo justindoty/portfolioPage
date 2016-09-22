@@ -83,7 +83,7 @@ header {
     margin: .5em 1em .3em 0;
     font-size: 2.5em;
     float: right;
-    /*font-family: 'Fjalla One', sans-serif;*/
+    font-family: 'Fjalla One', sans-serif;
     color: rgb(237, 237, 237);
 }
 
@@ -94,10 +94,10 @@ header {
     clear: both;
     display: -webkit-flex;
     display: flex;
-    height: 120%;
+    height: 100%;
     width: 100%;
     background-image: url('/assets/mountainView.jpg');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -107,6 +107,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    background-size: cover;
 }
 
 .homeContent {
