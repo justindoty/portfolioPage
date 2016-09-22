@@ -5,9 +5,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Justin Doty</title>
       <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-      <!-- <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" /> -->
+      <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" />
       <script src="/vendors/angular/angular.min.js"></script>
       <script src="/vendors/angular-route/angular-route.min.js"></script>
+      <script src="/vendors/angular-scroll/angular-scroll.min.js"></script>
       <script src="/assets/client.min.js"></script>
       <!-- <script src="/vendors/angular-animate/angular-animate.min.js"></script> -->
       <!-- <script src="/vendors/angular-ui-bootstrap/ui-bootstrap.js"></script> -->
@@ -17,14 +18,14 @@
       <body ng-controller="MainController as main">
         <div class="wrapper">
           <header>
-            <h1 class="nameLink" ng-click="main.homeRoute()">Justin Doty</h1>
+            <h1 class="nameLink" ng-click="main.scrollTo('home')">Justin Doty</h1>
             <div class="nav">
-              <h2 ng-click="main.contactRoute()">Contact</h2>
-              <h2 ng-click="main.workRoute()">Work</h2>
-              <h2 ng-click="main.aboutRoute()">About</h2>
+              <h2 ng-click="main.scrollTo('contact')">Contact</h2>
+              <h2 ng-click="main.scrollTo('work')">Work</h2>
+              <h2 ng-click="main.scrollTo('about')">About</h2>
             </div>
           </header>
-          <section class="home">
+          <section id='home' class="home">
             <div class="homeBGimage">
               <div class="homeContent">
                 <h1>Hello! My name is Justin. I'm a software developer in Minnesota. This page is still under constuction, but feel free to look around. <br />- Justin</h1>
@@ -32,13 +33,13 @@
 
             </div>
           </section>
-          <section class="about">
+          <section id='about' class="about">
             <!-- <div class="aboutPage"> -->
 
             <div class="aboutMeDiv">
               <div class="aboutImage1">
 
-                <img  src="/assets/JustinDoty.jpg" alt="picture of justindoty"/>
+                <!-- <img  src="/assets/JustinDoty.jpg" alt="picture of justindoty"/> -->
 
               </div>
               <h1>About Me</h1>
@@ -50,7 +51,7 @@
             <!-- </div> -->
             </div>
           </section>
-          <section class="work">
+          <section id="work" class="work">
             <div class="projectsLeft">
               <h1>Projects</h1>
               <button id="projectName" ng-click="main.projectClick('golf')">GOLF USA</button>
@@ -61,6 +62,7 @@
               </div>
 
               <button id="projectName" ng-click="main.projectClick('cti')">Compatible Technologies International</button>
+              <!-- <button ng-click="main.projectClick('bsbaits')">BarneStormBaits</button> -->
               <div class="description" ng-show="main.showProject.cti">
                 <h2>{{main.ctiDesc}}</h2>
               </div>
@@ -69,17 +71,23 @@
             <div class="displayProjectsRight">
               <div class="monitorDisplay">
                 <div id="golf" ng-show="main.showProject.golf">
-                  <button id="nextImage" ng-click="main.nextGolfImage()">Next</button>
+                  <button class="glyphicon glyphicon-chevron-left" id="nextImage" ng-click="main.nextGolfImageB()"></button>
+                  <button class="glyphicon glyphicon-chevron-right" id="nextImage" ng-click="main.nextGolfImageF()"></button>
+
                   <img ng-src="{{main.golfImages}}" />
                 </div>
                 <div id="cti" ng-show="main.showProject.cti">
-                  <button id="nextImage" ng-click="main.nextCtiImage()">Next</button>
+                  <button class="glyphicon glyphicon-chevron-left" id="nextImage" ng-click="main.nextCtiImageB()"></button>
+                  <button class="glyphicon glyphicon-chevron-right" id="nextImage" ng-click="main.nextCtiImageF()"></button>
                   <img ng-src="{{main.ctiImages}}" />
                 </div>
+                <!-- <div id="bsbaits" ng-show="main.showProject.bsbaits">
+                  <img ng-src="assets/Under-Construction.jpg" />
+                </div> -->
               </div>
             </div>
           </section>
-          <section class="contact">
+          <section id="contact" class="contact">
             <h1>Contact</h1>
             <h2>Feel free to contact me if you have any questions or would like to connect.</h2>
 

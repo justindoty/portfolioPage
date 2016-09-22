@@ -1,4 +1,4 @@
-angular.module('app').controller('MainController', ['$http','$location','RouteService', function($http,$location, RouteService){
+angular.module('app').controller('MainController', ['$http','$location','RouteService', '$anchorScroll', '$document', function($http,$location, RouteService, $anchorScroll, $document){
   var vm = this;
 
 
@@ -15,6 +15,10 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
     RouteService.workRoute();
   }
 
+  vm.scrollTo = function(id) {
+    $location.hash(id);
+    $anchorScroll();
+}
 
   // vm.golfUSA = function() {
   //   console.log('Golf USA CLICKED');
@@ -28,17 +32,17 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
   vm.projectClick = function(id) {
     vm.showProject.golf = false;
     vm.showProject.cti = false;
+    vm.showProject.bsbaits = false;
     vm.showProject[id] = true;
 
     // vm.menuHighlight.golfUSA = '',
     // vm.menuHighlight.cti = '',
     // vm.menuHighlight[id] = 'menu-highlight'
-    console.log('showProject:', vm.showProject);
-    console.log('id:', id);
+
   }
 
   vm.showProject = {
-    golfUSA: true,
+    golfUSA: false,
     cti: false,
   }
 
@@ -70,7 +74,19 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
     images: ['/assets/rewardsHome.png','/assets/rewardsPage.png','/assets/rewardsUse.png','/assets/rewardsDB.png']
   }
   var num = 0;
-  vm.nextGolfImage = function() {
+  vm.nextGolfImageB = function() {
+    num--;
+    if (num < 0) {
+      num = 3;
+    }
+    if (num == 3) {
+      vm.showLink = true;
+    }
+    console.log('num', num);
+    vm.golfImages = golfImages.images[num];
+    vm.gusaDesc = gusaDesc.desc[num];
+  }
+  vm.nextGolfImageF = function() {
     num++;
     if (num > 3) {
       num = 0;
@@ -88,10 +104,18 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
       images: ['/assets/ctiEditTemplate.png','/assets/ctiUpload.png','/assets/ctiEditTemplate.png','/assets/ctiUpload.png']
     }
     var ctiNum = 0;
-    vm.nextCtiImage = function() {
+    vm.nextCtiImageF = function() {
       ctiNum++;
       if (ctiNum > 3) {
         ctiNum = 0;
+      }
+      vm.ctiImages = ctiImages.images[ctiNum];
+      vm.ctiDesc = ctiDesc.desc[ctiNum];
+    }
+    vm.nextCtiImageB = function() {
+      ctiNum++;
+      if (ctiNum < 0) {
+        ctiNum = 3;
       }
       vm.ctiImages = ctiImages.images[ctiNum];
       vm.ctiDesc = ctiDesc.desc[ctiNum];
