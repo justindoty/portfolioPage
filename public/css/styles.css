@@ -64,7 +64,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .nameLink {
-    display: inline-block;
     float: left;
     margin: .5em 0 .3em .4em;
     font-size: 2.5em;
@@ -72,7 +71,6 @@ header {
     color: rgb(237, 237, 237);
 }
 .nav h2 {
-    display: inline-block;
     margin: .5em 1em .3em 0;
     font-size: 2.5em;
     float: right;
@@ -85,19 +83,18 @@ header {
 .home {
     clear: both;
     /*max-width: 100%;*/
-    display: webkit flex;
+    display: -webkit-flex;
     display: flex;
     /*flex-flow: row;*/
     /*justify-content: center;*/
     height: 100%;
     width: 100%;
     background-image: url('/assets/mountainView.jpg');
-    webkit-background-size: 100%;
     background-size: 120%;
     background-repeat: no-repeat;
 }
 .homeBGimage {
-    display: webkit flex;
+    display: -webkit-flex;
     display: flex;
     width: 100%;
     max-height: 100%;
@@ -119,13 +116,12 @@ header {
 /*~~~~~~~~ABOUT PAGE~~~~~~~~~~~*/
 
 .about {
-    display: webkit flex;
+    display: -webkit-flex;
     display: flex;
     flex-flow: row;
     height: 100%;
     background-color: #4F9BFD;
 }
-.aboutImage1 {}
 .aboutImage1 img {
     width: 20%;
     height: 200px;
@@ -138,10 +134,6 @@ header {
     border-radius: 20%;
 }
 .aboutMeDiv {
-    /*display: inline-block;*/
-    /*width: 80%;*/
-    /*display: flex;
-  flex-flow: column;*/
     width: 80%;
     margin: auto;
     margin-top: 4%;
@@ -166,11 +158,9 @@ header {
 
 .work {
     display: block;
-    flex-flow: row;
     height: 120%;
 }
 .projectsLeft {
-    display: inline-block;
     width: 40%;
     float: left;
     margin-left: 3%;
@@ -186,7 +176,7 @@ header {
 .projectsLeft h2 {
     display: block;
     font-size: 2.5em;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(0, 0, 0);
     margin-bottom: 15px;
     padding: 10px;
     line-height: 1.5em;
@@ -194,7 +184,7 @@ header {
 .projectsLeft button {
     display: table;
     font-size: 2.5em;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgb(0, 0, 0);
     margin: auto;
     padding: 10px;
     margin-top: 5%;
@@ -205,7 +195,7 @@ header {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 .projectsLeft button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(150, 150, 150);
     text-decoration: none;
     border: none;
 }
@@ -215,11 +205,6 @@ header {
     float: left;
     margin-top: 3%;
     margin-left: 5%;
-    /*padding-right: 30px;*/
-    /*margin-right: 5px;*/
-    /*justify-content: center;*/
-    height: 100%;
-    /*align-items: center;*/
     background-image: url("/assets/monitorBG3.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -237,11 +222,8 @@ header {
     /*background-color: blue;*/
 }
 #golf img {
-    /*background-image: url("/assets/rewardsHome.png");*/
-    /*background-repeat: no-repeat;*/
     height: 100%;
     width: 100%;
-    /*overflow: hidden;*/
 }
 #nextImage {
     position: absolute;
@@ -327,9 +309,6 @@ footer h1 {
         height: 20%;
         float: left;
     }
-    #largeScreenImg {
-        display: none;
-    }
     .aboutMeDiv {
         height: 15%;
         width: 50%;
@@ -337,22 +316,18 @@ footer h1 {
         margin-top: 15px;
     }
     .aboutMeDiv h1 {
-        /*float: right;*/
         text-align: center;
         font-size: 3.5em;
         line-height: 1em;
-        color: rgba(0, 0, 0, 0.9);
     }
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 2.5em;
-        color: rgba(0, 0, 0, 0.9);
     }
     /*~~~~~~~~~WORK PAGE~~~~~~~~~*/
     .work {
         display: block;
-        flex-flow: row;
         height: 100%;
     }
     .projectsLeft {
@@ -372,7 +347,6 @@ footer h1 {
     .projectsLeft h2 {
         display: block;
         font-size: 2.5em;
-        color: rgba(0, 0, 0, 0.8);
         margin-bottom: 15px;
         padding: 10px;
         line-height: 1.5em;
@@ -380,18 +354,17 @@ footer h1 {
     .projectsLeft button {
         display: table;
         font-size: 3em;
-        color: rgba(0, 0, 0, 0.8);
         margin: auto;
         padding: 10px;
         margin-top: 5%;
         margin-bottom: 5%;
         line-height: 1.5em;
-        -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow:    2px 2px 2px rgb(120, 120, 120);
+        -webkit-box-shadow: 2px 2px 2px rgb(120, 120, 120);
+        box-shadow: 2px 2px 2px rgb(120, 120, 120);
     }
     .projectsLeft button:hover {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgb(150,150,150);
         text-decoration: none;
         border: none;
     }
@@ -401,13 +374,6 @@ footer h1 {
         float: left;
         margin-top: 3%;
         margin-left: 5%;
-        /*padding-right: 30px;*/
-        /*margin-right: 5px;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        background-image: url("/assets/monitorBG3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
     .displayProjectsRight h1 {
         font-size: 50px;
@@ -422,11 +388,8 @@ footer h1 {
         /*background-color: blue;*/
     }
     #golf img {
-        /*background-image: url("/assets/rewardsHome.png");*/
-        /*background-repeat: no-repeat;*/
         height: 100%;
         width: 100%;
-        /*overflow: hidden;*/
     }
     #nextImage {
         position: absolute;
@@ -502,11 +465,6 @@ footer h1 {
         padding-top: 0;
         align-content: flex-end;
     }
-    .aboutImage1 {
-        /*display: flex;*/
-        /*flex-flow: column;*/
-        /*flex-wrap: wrap;*/
-    }
     .aboutImage1 img {
         width: 30%;
         height: 30%;
@@ -527,14 +485,14 @@ footer h1 {
         text-align: center;
         font-size: 3em;
         line-height: .5em;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgb(0, 0, 0);
     }
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 2.4em;
         font-size: 2em;
         padding: 6px;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgb(0, 0, 0);
     }
     .work {
         height: 150%;
@@ -550,10 +508,6 @@ footer h1 {
         display: inline-block;
         margin-top: 3%;
         text-align: center;
-        /*display: flex;
-    align-self: center;*/
-        /*flex-wrap: nowrap;*/
-        /*margin-bottom: 30px;*/
         font-size: 2.5em;
     }
     .projectsLeft button {
@@ -562,9 +516,6 @@ footer h1 {
         display: table;
         margin-top: 2%;
         margin-bottom: 2%;
-        -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     }
     .projectsLeft h2 {
         display: block;
@@ -572,7 +523,6 @@ footer h1 {
         padding: 5px;
         text-align: center;
         font-size: 1.5em;
-        color: rgba(0, 0, 0, 0.8);
         line-height: 1.5em;
     }
     .displayProjectsRight {
@@ -580,8 +530,6 @@ footer h1 {
         height: 70%;
         display: block;
         margin-left: 10%;
-        background-image: url("/assets/monitorBG3.jpg");
-        background-repeat: no-repeat;
         background-size: 100%;
     }
     .monitorDisplay {
@@ -592,8 +540,6 @@ footer h1 {
         width: 94%;
         display: block;
         /*background-color: blue;*/
-        /*margin: 5em 0 0 1em;*/
-        /*overflow: hidden;*/
     }
     #golf img {
         height: 100%;
@@ -609,7 +555,6 @@ footer h1 {
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
-        /*overflow: hidden;*/
     }
     #cti img {
         width: 100%;
@@ -681,11 +626,6 @@ footer h1 {
         padding-top: 0;
         align-content: flex-end;
     }
-    .aboutImage1 {
-        /*display: flex;*/
-        /*flex-flow: column;*/
-        /*flex-wrap: wrap;*/
-    }
     .aboutImage1 img {
         float: left;
         width: 40%;
@@ -700,19 +640,18 @@ footer h1 {
         background-color: #4F9BFD;
     }
     .aboutMeDiv h1 {
-        /*float: right;*/
         padding-top: 0;
         text-align: center;
         font-size: 3em;
         line-height: .5em;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgb(0, 0, 0);
     }
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 2.4em;
         font-size: 1.6em;
         padding: 6px;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgb(0, 0, 0);
     }
     .work {
         height: 120%;
@@ -732,15 +671,12 @@ footer h1 {
     .projectsLeft button {
         display: table;
         font-size: 2.5em;
-        color: rgba(0, 0, 0, 0.8);
+        color: rgb(0, 0, 0);
         margin: auto;
         padding: 10px;
         margin-top: 5%;
         margin-bottom: 5%;
         line-height: 1.5em;
-        -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     }
     .projectsLeft h2 {
         display: block;
@@ -748,7 +684,6 @@ footer h1 {
         padding: 5px;
         text-align: center;
         font-size: 1.5em;
-        color: rgba(0, 0, 0, 0.8);
         line-height: 1.5em;
     }
     .displayProjectsRight {
@@ -756,9 +691,6 @@ footer h1 {
         height: 58%;
         display: block;
         margin-left: 10%;
-        background-image: url("/assets/monitorBG3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
     .monitorDisplay {
         position: relative;
@@ -783,7 +715,6 @@ footer h1 {
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
-        /*overflow: hidden;*/
     }
     #cti img {
         width: 100%;
@@ -854,11 +785,6 @@ footer h1 {
         padding-top: 0;
         align-content: flex-end;
     }
-    .aboutImage1 {
-        /*display: flex;*/
-        /*flex-flow: column;*/
-        /*flex-wrap: wrap;*/
-    }
     .aboutImage1 img {
         float: left;
         width: 35%;
@@ -873,18 +799,15 @@ footer h1 {
         background-color: #4F9BFD;
     }
     .aboutMeDiv h1 {
-        /*float: right;*/
         padding-top: 0;
         text-align: center;
         font-size: 2.6em;
         line-height: .5em;
-        color: rgba(0, 0, 0, 0.5);
     }
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
-        color: rgba(0, 0, 0, 0.5);
     }
     .work {
         height: 220%;
@@ -906,7 +829,6 @@ footer h1 {
         padding: 5px;
         text-align: center;
         font-size: 1.5em;
-        color: rgba(0, 0, 0, 0.8);
         line-height: 1.5em;
     }
     .displayProjectsRight {
@@ -914,9 +836,6 @@ footer h1 {
         height: 60%;
         display: block;
         margin-left: 10%;
-        background-image: url("/assets/monitorBG3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
     .monitorDisplay {
         position: relative;
@@ -926,8 +845,6 @@ footer h1 {
         width: 94%;
         display: block;
         /*background-color: blue;*/
-        /*margin: 5em 0 0 1em;*/
-        /*overflow: hidden;*/
     }
     #golf img {
         height: 100%;
@@ -943,7 +860,6 @@ footer h1 {
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
-        /*overflow: hidden;*/
     }
     #cti img {
         width: 100%;
@@ -979,8 +895,6 @@ footer h1 {
     }
     .contact img {
         width: 100%;
-        /*display: inline;*/
-        /*float: left;*/
     }
     footer h1 {
         font-size: 1.5em;
@@ -1013,11 +927,6 @@ footer h1 {
         padding-top: 0;
         align-content: flex-end;
     }
-    .aboutImage1 {
-        /*display: flex;*/
-        /*flex-flow: column;*/
-        /*flex-wrap: wrap;*/
-    }
     .aboutImage1 img {
         float: left;
         width: 35%;
@@ -1032,18 +941,15 @@ footer h1 {
         background-color: #4F9BFD;
     }
     .aboutMeDiv h1 {
-        /*float: right;*/
         padding-top: 0;
         text-align: center;
         font-size: 2.6em;
         line-height: .5em;
-        color: rgba(0, 0, 0, 0.5);
     }
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
-        color: rgba(0, 0, 0, 0.5);
     }
     .work {
         height: 300%;
@@ -1058,10 +964,6 @@ footer h1 {
         display: block;
         padding-top: 10px;
         text-align: center;
-        /*display: flex;
-    align-self: center;*/
-        /*flex-wrap: nowrap;*/
-        /*margin-bottom: 30px;*/
         font-size: 2.5em;
     }
     .projectsLeft h2 {
@@ -1070,7 +972,6 @@ footer h1 {
         padding: 5px;
         text-align: center;
         font-size: 1.5em;
-        color: rgba(0, 0, 0, 0.8);
         line-height: 1.5em;
     }
     .displayProjectsRight {
@@ -1078,9 +979,6 @@ footer h1 {
         height: 45%;
         display: block;
         margin-left: 10%;
-        background-image: url("/assets/monitorBG3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
     .monitorDisplay {
         position: relative;
@@ -1090,8 +988,6 @@ footer h1 {
         width: 94%;
         display: block;
         /*background-color: blue;*/
-        /*margin: 5em 0 0 1em;*/
-        /*overflow: hidden;*/
     }
     #golf img {
         height: 100%;
@@ -1107,7 +1003,6 @@ footer h1 {
         background-repeat: no-repeat;
         height: 100%;
         width: 100%;
-        /*overflow: hidden;*/
     }
     #cti img {
         width: 100%;
@@ -1143,8 +1038,6 @@ footer h1 {
     }
     .contact img {
         width: 100%;
-        /*display: inline;*/
-        /*float: left;*/
     }
     footer h1 {
         font-size: 1.5em;
@@ -1172,14 +1065,13 @@ footer h1 {
         display: inline-block;
     }
     .home h1 {
-        font-size: 1.5em
+        font-size: 1.5em;
     }
     .about {
         width: 100%;
         height: 80%;
         padding-top: 4%;
     }
-    .aboutImage1 {}
     .aboutImage1 img {
         float: left;
         width: 40%;
@@ -1195,18 +1087,15 @@ footer h1 {
         background-color: #4F9BFD;
     }
     .aboutMeDiv h1 {
-        /*float: right;*/
         padding-top: 0;
         text-align: center;
         font-size: 2.5em;
         line-height: .5em;
-        color: rgba(0, 0, 0, 0.5);
     }
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
-        color: rgba(0, 0, 0, 0.5);
     }
     .work {
         height: 110%;
@@ -1230,20 +1119,15 @@ footer h1 {
         display: table;
         font-size: 1.5em;
         padding: 5px 15px 5px 15px;
-        color: rgba(0, 0, 0, 0.8);
         margin: auto;
         margin-bottom: 10px;
         margin-top: 10px;
-        -moz-box-shadow:    2px 2px 2px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     }
     .projectsLeft h2 {
         display: block;
         margin: 0;
         text-align: center;
         font-size: 1em;
-        color: rgba(0, 0, 0, 0.8);
         line-height: 1.5em;
     }
     .displayProjectsRight {
@@ -1251,9 +1135,6 @@ footer h1 {
         height: 55%;
         display: block;
         margin-left: 10%;
-        background-image: url("/assets/monitorBG3.jpg");
-        background-repeat: no-repeat;
-        background-size: 100%;
     }
     .monitorDisplay {
         position: relative;
@@ -1288,8 +1169,6 @@ footer h1 {
     .contact h2 {
         display: inline-block;
         margin-top: 10px;
-        /*width: 250px;*/
-        /*margin-left: 18%;*/
         text-align: center;
         font-size: 2.0em;
     }
@@ -1317,6 +1196,6 @@ footer h1 {
         font-size: 1.5em;
         text-align: center;
         padding-top: 40px;
-        color: rgba(0, 0, 0, 0.5);
+        color: rgb(0, 0, 0);
     }
 }
