@@ -633,14 +633,16 @@ footer h1 {
         text-decoration: none;
     }
     .glyphicon-chevron-left {
-        height: auto;
-        width: auto;
+        display: inline-block;
+        height: 2em;
+        width: 2em;
         position: relative;
         left: -3%;
     }
     .glyphicon-chevron-right {
-        height: auto;
-        width: auto;
+        display: inline-block;
+        height: 2em;
+        width: 2em;
         position: relative;
         left: 90%;
     }
