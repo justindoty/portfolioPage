@@ -34,11 +34,6 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
     vm.showProject.cti = false;
     vm.showProject.bsbaits = false;
     vm.showProject[id] = true;
-
-    // vm.menuHighlight.golfUSA = '',
-    // vm.menuHighlight.cti = '',
-    // vm.menuHighlight[id] = 'menu-highlight'
-
   }
 
   vm.showProject = {
@@ -46,12 +41,23 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
     cti: false,
   }
 
-  // vm.menuHighlight = {
-  //   photo: 'menu-highlight',
-  //   template: '',
-  //   signature: '',
-  //   header: ''
-  // }
+ var images =  [
+      {image:'/assets/weblogo.png'},
+      {image:'/assets/csslogo.png'},
+      {image:'/assets/jslogo.png'},
+      {image:'/assets/Gitlogo.png'},
+      {image:'/assets/AngularJS-large.png'},
+      {image:'/assets/bootstraplogo.png'},
+      {image:'/assets/jquerylogo.png'},
+      {image:'/assets/nodejslogo.png'},
+      {image:'/assets/mongologo.png'},
+      {image:'/assets/Npmlogo.png'}
+    ];
+
+vm.images = images;
+
+  // vm.skillsImg2 = images.images[1];
+
   var gusaDesc = {
     desc: ['This application was built for a Minnesota golf retail store. The store had a sales reward program that allowed customers to earn rewards that could be applied towards future purchases. The store used paper punch cards to keep track of these rewards. For every $10 a customer spends they receive a punch, after they accumulted 15 punches(fill up a card), they recieve $10 of their next purchase. This was a hastle to maintain and manage especially when some customers would accumulate 10 or more cards in a single purchase.',
     'This application solves this problem by handling all of the calculations of the rewards as well as maintaining all of their customers and rewards data in one place. This also saves customers the hassel of having to keep track of their cards. After each sale, the application sends out an email with all of that customers rewards information',
@@ -73,7 +79,9 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
   var golfImages = {
     images: ['/assets/rewardsHome.png','/assets/rewardsPage.png','/assets/rewardsUse.png','/assets/rewardsDB.png']
   }
+
   var num = 0;
+
   vm.nextGolfImageB = function() {
     num--;
     if (num < 0) {
@@ -86,6 +94,7 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
     vm.golfImages = golfImages.images[num];
     vm.gusaDesc = gusaDesc.desc[num];
   }
+
   vm.nextGolfImageF = function() {
     num++;
     if (num > 3) {

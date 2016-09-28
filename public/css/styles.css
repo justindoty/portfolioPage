@@ -1,17 +1,27 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/* ------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
     vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
 }
 
 body {
@@ -26,7 +36,8 @@ blockquote, q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
     content: '';
     content: none;
 }
@@ -36,11 +47,63 @@ table {
     border-spacing: 0;
 }
 
+:focus {
+    outline-width: 0;
+}
 
-/*Everthing above is the reset. DONT CHANGE*/
+html {
+    overflow-y: scroll; /* Always show a vertical scrollbar, even when there is no scrolling */
+}
 
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
-/*////////////////////////////////////////////*/
+/* ------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+audio, canvas, video, progress, picture {
+    display: inline-block;
+}
+
+template {
+    display: none;
+}
+
+/* ------------------------------------------------
+ Form Reset Styles
+------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
 
 html {
     width: 100%;
@@ -59,6 +122,7 @@ body {
 .wrapper {
     width: 100%;
     height: 100%;
+    background-color: #333;
     background-color: rgba(0, 0, 0, 0.1);
     padding: 0;
     margin: 0;
@@ -68,6 +132,7 @@ header {
     position: fixed;
     width: 100%;
     height: 6%;
+    background-color: #333;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 3;
 }
@@ -80,7 +145,7 @@ header {
     color: rgb(237, 237, 237);
 }
 
-.nav h2 {
+.navButton {
     margin: .5em 1em .3em 0;
     font-size: 2.5em;
     float: right;
@@ -95,11 +160,14 @@ header {
     clear: both;
     display: -webkit-flex;
     display: flex;
-    height: 100%;
-    width: 100%;
     background-image: url('/assets/mountainView.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat fixed;
 }
 
 .homeBGimage {
@@ -107,14 +175,14 @@ header {
     display: flex;
     width: 100%;
     height: 100%;
+    background-color: #333;
+    background-color: transparent;
     background-color: rgba(0, 0, 0, 0.2);
     background-size: cover;
 }
 
 .homeContent {
-    height: 30%;
     max-width: 60%;
-    /*margin: auto;*/
     padding-top: 10%;
     margin-left: 25%;
 }
@@ -132,18 +200,11 @@ header {
     display: -webkit-flex;
     display: flex;
     flex-flow: row;
-    height: 100%;
+    height: 65%;
     background-color: #4F9BFD;
 }
 
 .aboutImage1 img {
-    width: 20%;
-    height: 200px;
-    border-radius: 20%;
-}
-
-#largeScreenImg {
-    margin-left: 15%;
     width: 20%;
     height: 200px;
     border-radius: 20%;
@@ -158,7 +219,6 @@ header {
 }
 
 .aboutMeDiv h1 {
-    /*float: right;*/
     text-align: center;
     font-size: 30px;
     line-height: 1em;
@@ -173,6 +233,33 @@ header {
 }
 
 
+.skills h1 {
+    text-align: center;
+    padding-top: 4%;
+    font-size: 30px;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+}
+.skillsWrapper {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.skillsDiv {
+    float: left;
+    height: 70%;
+    width: 100%;
+    padding-left: 1%;
+    margin-top: 2%;
+}
+.skillsDiv li {
+    float: left;
+    margin: 10px 10px 0 15px;
+}
+.skillsImg {
+    height: 50px;
+}
+
 /*~~~~~~~~~WORK PAGE~~~~~~~~~*/
 
 .work {
@@ -184,7 +271,7 @@ header {
     width: 40%;
     float: left;
     margin-left: 3%;
-    height: 100%;
+    height: 80%;
     text-align: center;
 }
 
@@ -226,7 +313,7 @@ header {
 
 .displayProjectsRight {
     width: 50%;
-    height: 80%;
+    height: 70%;
     float: left;
     margin-top: 3%;
     margin-left: 5%;
@@ -249,7 +336,7 @@ header {
     /*background-color: blue;*/
 }
 
-#golf img {
+.golf img {
     height: 100%;
     width: 100%;
 }
@@ -269,22 +356,19 @@ header {
   width: 100%;
 }
 
-#forward {
+.forward {
   float: right;
   font-size: 5em;
 }
-#back {
+.back {
   float: left;
   font-size: 5em;
 }
 
-
-#cti img {
+.cti img {
     height: 100%;
     width: 100%;
 }
-
-
 
 /*~~~~~~~~~~~CONTACT PAGE~~~~~~~~*/
 
@@ -318,12 +402,12 @@ header {
     margin: 5% 0 0 10%;
 }
 
-#linkedin img {
+.linkedin img {
     padding-bottom: 40px;
     width: 110%;
 }
 
-#firsta {
+.contact .firsta  {
     margin-left: 30%;
 }
 
@@ -351,13 +435,16 @@ footer h1 {
     header {
         height: 4%;
     }
+
     .home {
         height: 100%;
         background-size: 100%;
     }
+
     .nav h2 {
         margin-left: .5em;
     }
+
     .about {
         width: 100%;
         height: 30%;
@@ -366,32 +453,45 @@ footer h1 {
         padding-top: 0;
         align-content: flex-end;
     }
+
     .aboutImage1 img {
         width: 20%;
         height: 20%;
         float: left;
     }
+
     .aboutMeDiv {
         height: 15%;
         width: 50%;
         background-color: #4F9BFD;
         margin-top: 15px;
     }
+
     .aboutMeDiv h1 {
         text-align: center;
         font-size: 3.5em;
         line-height: 1em;
     }
+
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 2.5em;
     }
+    .skillsDiv li {
+        float: left;
+        margin: 10px 15px 0 25px;
+    }
+    .skillsImg {
+        height: 90px;
+    }
+
     /*~~~~~~~~~WORK PAGE~~~~~~~~~*/
     .work {
         display: block;
         height: 100%;
     }
+
     .projectsLeft {
         display: inline-block;
         width: 40%;
@@ -400,12 +500,14 @@ footer h1 {
         height: 100%;
         text-align: center;
     }
+
     .projectsLeft h1 {
         margin-top: 7%;
         padding-top: 10px;
         margin-bottom: 2%;
         font-size: 5em;
     }
+
     .projectsLeft h2 {
         display: block;
         font-size: 2.5em;
@@ -413,6 +515,7 @@ footer h1 {
         padding: 10px;
         line-height: 1.5em;
     }
+
     .projectsLeft button {
         display: table;
         font-size: 3em;
@@ -425,11 +528,13 @@ footer h1 {
         -webkit-box-shadow: 2px 2px 2px rgb(120, 120, 120);
         box-shadow: 2px 2px 2px rgb(120, 120, 120);
     }
+
     .projectsLeft button:hover {
         background-color: rgb(150, 150, 150);
         text-decoration: none;
         border: none;
     }
+
     .displayProjectsRight {
         width: 50%;
         height: 90%;
@@ -437,52 +542,51 @@ footer h1 {
         margin-top: 3%;
         margin-left: 5%;
     }
+
     .displayProjectsRight h1 {
         font-size: 50px;
         color: white;
     }
+
     .monitorDisplay {
         position: relative;
         top: 3.5%;
         left: 2.8%;
         height: 53%;
         width: 94%;
-        /*background-color: blue;*/
     }
-    #golf img {
-        height: 100%;
-        width: 100%;
-    }
-    #cti img {
-        height: 100%;
-        width: 100%;
-    }
+
     .buttonDiv {
       position: absolute;
       z-index: 2;
       top: 50%;
       width: 100%;
     }
-    #forward {
+
+    .forward {
       float: right;
       font-size: 6em;
     }
-    #back {
+
+    .back {
       float: left;
       font-size: 6em;
     }
+
     /*~~~~~~~~~~~CONTACT PAGE~~~~~~~~*/
     .contact {
         display: block;
         background-color: rgb(110, 155, 211);
         height: 45%;
     }
+
     .contact h1 {
         display: table;
         margin: auto;
         padding-top: 2%;
         font-size: 5em;
     }
+
     .contact h2 {
         display: block;
         width: 50%;
@@ -490,25 +594,31 @@ footer h1 {
         text-align: center;
         font-size: 4em;
     }
+
     .contact a {
         display: inline-block;
         height: 200px;
         width: 200px;
         margin: 4% 0 0 10%;
     }
-    #linkedin img {
+
+    .linkedin img {
         padding-bottom: 40px;
         width: 110%;
     }
-    #firsta {
+
+    .contact .firsta {
         margin-left: 28%;
     }
+
     .contact img {
         width: 100%;
     }
+
     footer {
         height: 5%;
     }
+
     footer h1 {
         font-size: 3em;
         text-align: center;
@@ -531,7 +641,7 @@ footer h1 {
     }
     .about {
         width: 100%;
-        height: 70%;
+        height: 55%;
         flex-flow: row;
         flex-wrap: nowrap;
         padding-top: 0;
@@ -542,15 +652,14 @@ footer h1 {
         height: 30%;
         float: left;
     }
-    #largeScreenImg {
-        display: none;
-    }
+
     .aboutMeDiv {
         height: 55%;
         width: 100%;
         background-color: #4F9BFD;
         margin-top: 15px;
     }
+
     .aboutMeDiv h1 {
         padding-top: 0;
         text-align: center;
@@ -558,6 +667,7 @@ footer h1 {
         line-height: .5em;
         color: rgb(0, 0, 0);
     }
+
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 2.4em;
@@ -565,22 +675,34 @@ footer h1 {
         padding: 6px;
         color: rgb(0, 0, 0);
     }
+
+    .skillsDiv li {
+        float: left;
+        margin: 5px 5px 0 5px;
+    }
+    .skillsImg {
+        height: 40px;
+    }
+
     .work {
-        height: 160%;
+        height: 170%;
         display: block;
     }
+
     .projectsLeft {
         display: block;
         margin-left: 0;
         width: 100%;
         height: auto;
     }
+
     .projectsLeft h1 {
         display: inline-block;
-        margin-top: 3%;
+        margin-top: 2%;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 4em;
     }
+
     .projectsLeft button {
         max-width: 50%;
         margin: auto;
@@ -588,6 +710,7 @@ footer h1 {
         margin-top: 2%;
         margin-bottom: 2%;
     }
+
     .projectsLeft h2 {
         display: block;
         margin: 0;
@@ -596,6 +719,7 @@ footer h1 {
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
     .displayProjectsRight {
         width: 80%;
         height: 60%;
@@ -603,6 +727,7 @@ footer h1 {
         margin-left: 10%;
         background-size: 100%;
     }
+
     .monitorDisplay {
         position: relative;
         top: 26px;
@@ -612,38 +737,46 @@ footer h1 {
         display: block;
         /*background-color: blue;*/
     }
-    #golf img {
+
+    .golf img {
         height: 100%;
         width: 100%;
     }
-    #cti img {
+
+    .cti img {
         width: 100%;
         height: 100%;
     }
+
     .buttonDiv {
       position: absolute;
       z-index: 2;
       top: 50%;
       width: 100%;
     }
-    #forward {
+
+    .forward {
       float: right;
       font-size: 4em;
     }
-    #back {
+
+    .back {
       float: left;
       font-size: 4em;
     }
+
     .contact {
         display: block;
         background-color: rgb(110, 155, 211);
         height: 40%;
     }
+
     .contact h1 {
         padding-top: 10px;
         text-align: center;
         font-size: 2.5em;
     }
+
     .contact h2 {
         display: block;
         padding-top: 20px;
@@ -652,25 +785,31 @@ footer h1 {
         text-align: center;
         font-size: 2.0em;
     }
+
     .contact a {
         display: inline-block;
         height: 100px;
         width: 100px;
         margin: 5% 0 0 10%;
     }
-    #linkedin img {
+
+    .linkedin img {
         padding-bottom: 40px;
         width: 110%;
     }
-    #firsta {
+
+    .contact .firsta {
         margin-left: 25%;
     }
+
     .contact img {
         width: 100%;
     }
+
     footer {
         height: 6em;
     }
+
     footer h1 {
         font-size: 1.5em;
         text-align: center;
@@ -682,36 +821,40 @@ footer h1 {
     .home {
         height: 58%;
     }
+
     header {
         height: 6%;
     }
+
     .nav h2 {
         margin-left: .5em;
     }
+
     .home h1 {
         font-size: 3em;
     }
+
     .about {
         width: 100%;
-        height: 100%;
+        height: 45%;
         flex-flow: row;
         flex-wrap: nowrap;
         padding-top: 0;
         align-content: flex-end;
     }
+
     .aboutImage1 img {
         float: left;
         width: 40%;
         height: 40%;
     }
-    #largeScreenImg {
-        display: none;
-    }
+
     .aboutMeDiv {
         height: 90%;
         width: 100%;
         background-color: #4F9BFD;
     }
+
     .aboutMeDiv h1 {
         padding-top: 0;
         text-align: center;
@@ -719,6 +862,7 @@ footer h1 {
         line-height: .5em;
         color: rgb(0, 0, 0);
     }
+
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 2.4em;
@@ -726,21 +870,33 @@ footer h1 {
         padding: 6px;
         color: rgb(0, 0, 0);
     }
+
+    .skillsDiv li {
+        float: left;
+        margin: 5px 20px 0 30px;
+    }
+    .skillsImg {
+        height: 40px;
+    }
+
     .work {
-        height: 120%;
+        height: 135%;
         display: block;
     }
+
     .projectsLeft {
         display: block;
         width: 100%;
         height: auto;
     }
+
     .projectsLeft h1 {
         display: block;
         padding-top: 10px;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 3em;
     }
+
     .projectsLeft button {
         display: table;
         font-size: 2.5em;
@@ -751,6 +907,7 @@ footer h1 {
         margin-bottom: 5%;
         line-height: 1.5em;
     }
+
     .projectsLeft h2 {
         display: block;
         margin: 0;
@@ -759,12 +916,14 @@ footer h1 {
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
     .displayProjectsRight {
         width: 80%;
         height: 50%;
         display: block;
         margin-left: 10%;
     }
+
     .monitorDisplay {
         position: relative;
         top: 21px;
@@ -772,64 +931,77 @@ footer h1 {
         height: 46%;
         width: 94%;
         display: block;
-        /*background-color: blue;*/
     }
-    #golf img {
+
+    .golf img {
         height: 100%;
         width: 100%;
     }
-    #cti img {
+
+    .cti img {
         width: 100%;
         height: 100%;
     }
+
     .buttonDiv {
       position: absolute;
       z-index: 2;
       top: 50%;
       width: 100%;
     }
-    #forward {
+
+    .forward {
       float: right;
       font-size: 4em;
     }
-    #back {
+
+    .back {
       float: left;
       font-size: 4em;
     }
+
     .contact {
         display: block;
         background-color: rgb(110, 155, 211);
         height: 40%;
         text-align: center;
     }
+
     .contact h1 {
         display: block;
         font-size: 2.5em;
     }
+
     .contact h2 {
         display: block;
         padding-top: 20px;
         font-size: 2.0em;
     }
+
     .contact a {
         display: inline-block;
         height: 100px;
         width: 100px;
         margin: 10% 0 0 10%;
     }
-    #linkedin img {
+
+    .linkedin img {
         padding-bottom: 40px;
         width: 110%;
     }
-    #firsta {
+
+    .contact .firsta {
         margin: 0;
     }
+
     .contact img {
         width: 100%;
     }
+
     footer {
         height: 6em;
     }
+
     footer h1 {
         font-size: 1.5em;
         text-align: center;
@@ -841,61 +1013,79 @@ footer h1 {
     header {
         height: 6%;
     }
+
     .nameLink {
         font-size: 1.5em;
     }
+
     .nav h2 {
         font-size: 1.5em;
         margin-left: .5em;
     }
+
     .home {
         height: 100%;
     }
+
     .home h1 {
         font-size: 2.3em;
     }
+
     .about {
         width: 100%;
-        height: 100%;
+        height: 90%;
     }
+
     .aboutImage1 img {
         float: left;
         width: 35%;
         height: 40%;
     }
-    #largeScreenImg {
-        display: none;
-    }
+
     .aboutMeDiv {
         height: 90%;
         width: 100%;
         background-color: #4F9BFD;
     }
+
     .aboutMeDiv h1 {
         padding-top: 0;
         text-align: center;
         font-size: 2.6em;
         line-height: .5em;
     }
+
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
     }
+
+    .skillsDiv li {
+        float: left;
+        margin: 5px 10px 0 5px;
+    }
+    .skillsImg {
+        height: 25px;
+    }
+
     .work {
-        height: 250%;
+        height: 270%;
         display: block;
     }
+
     .projectsLeft {
         display: block;
         width: 100%;
     }
+
     .projectsLeft h1 {
         display: block;
         padding-top: 10px;
         text-align: center;
-        font-size: 2.5em;
+        font-size: 3em;
     }
+
     .projectsLeft h2 {
         display: block;
         margin: 0;
@@ -904,12 +1094,14 @@ footer h1 {
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
     .displayProjectsRight {
         width: 80%;
         height: 50%;
         display: block;
         margin-left: 10%;
     }
+
     .monitorDisplay {
         position: relative;
         top: 3.5%;
@@ -917,40 +1109,47 @@ footer h1 {
         height: 58%;
         width: 94%;
         display: block;
-        /*background-color: blue;*/
     }
-    #golf img {
+
+    .golf img {
         height: 100%;
         width: 100%;
     }
-    #cti img {
+
+    .cti img {
         width: 100%;
         height: 100%;
     }
+
     .buttonDiv {
       position: absolute;
       z-index: 2;
       top: 40%;
       width: 100%;
     }
-    #forward {
+
+    .forward {
       float: right;
       font-size: 3em;
     }
-    #back {
+
+    .back {
       float: left;
       font-size: 3em;
     }
+
     .contact {
         display: block;
         height: 90%;
         background-color: rgb(110, 155, 211);
     }
+
     .contact h1 {
         padding-top: 10px;
         text-align: center;
         font-size: 2.5em;
     }
+
     .contact h2 {
         display: block;
         padding-top: 20px;
@@ -959,19 +1158,23 @@ footer h1 {
         text-align: center;
         font-size: 2.0em;
     }
+
     .contact a {
         display: inline-block;
         height: 100px;
         width: 100px;
         margin: 10% 0 0 14%;
     }
-    #linkedin img {
+
+    .linkedin img {
         padding-bottom: 40px;
         width: 110%;
     }
+
     .contact img {
         width: 100%;
     }
+
     footer h1 {
         font-size: 1.5em;
         text-align: center;
@@ -983,19 +1186,24 @@ footer h1 {
     header {
         height: 6%;
     }
+
     .nameLink {
         font-size: 1.5em;
     }
+
     .nav h2 {
         font-size: 1.5em;
         margin-left: .5em;
     }
+
     .home {
         height: 100%;
     }
+
     .home h1 {
         font-size: 2em;
     }
+
     .about {
         width: 100%;
         height: 130%;
@@ -1004,45 +1212,50 @@ footer h1 {
         padding-top: 0;
         align-content: flex-end;
     }
+
     .aboutImage1 img {
         float: left;
         width: 35%;
         height: 40%;
     }
-    #largeScreenImg {
-        display: none;
-    }
+
     .aboutMeDiv {
         height: 70%;
         width: 100%;
         background-color: #4F9BFD;
     }
+
     .aboutMeDiv h1 {
         padding-top: 0;
         text-align: center;
         font-size: 2.6em;
         line-height: .5em;
     }
+
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
     }
+
     .work {
         height: 300%;
         display: block;
     }
+
     .projectsLeft {
         display: block;
         width: 100%;
         height: auto;
     }
+
     .projectsLeft h1 {
         display: block;
         padding-top: 10px;
         text-align: center;
         font-size: 2.5em;
     }
+
     .projectsLeft h2 {
         display: block;
         margin: 0;
@@ -1051,12 +1264,14 @@ footer h1 {
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
     .displayProjectsRight {
         width: 80%;
         height: 45%;
         display: block;
         margin-left: 10%;
     }
+
     .monitorDisplay {
         position: relative;
         top: 3.0%;
@@ -1064,40 +1279,47 @@ footer h1 {
         height: 45%;
         width: 94%;
         display: block;
-        /*background-color: blue;*/
     }
-    #golf img {
+
+    .golf img {
         height: 100%;
         width: 100%;
     }
-    #cti img {
+
+    .cti img {
         width: 100%;
         height: 100%;
     }
+
     .buttonDiv {
       position: absolute;
       z-index: 2;
       top: 40%;
       width: 100%;
     }
-    #forward {
+
+    .forward {
       float: right;
       font-size: 3em;
     }
-    #back {
+
+    .back {
       float: left;
       font-size: 3em;
     }
+
     .contact {
         display: block;
         height: 90%;
         background-color: rgb(110, 155, 211);
     }
+
     .contact h1 {
         padding-top: 10px;
         text-align: center;
         font-size: 2.5em;
     }
+
     .contact h2 {
         display: block;
         padding-top: 20px;
@@ -1106,19 +1328,23 @@ footer h1 {
         text-align: center;
         font-size: 2.0em;
     }
+
     .contact a {
         display: inline-block;
         height: 100px;
         width: 100px;
         margin: 5% 0 0 14%;
     }
-    #linkedin img {
+
+    .linkedin img {
         padding-bottom: 40px;
         width: 110%;
     }
+
     .contact img {
         width: 100%;
     }
+
     footer h1 {
         font-size: 1.5em;
         text-align: center;
@@ -1130,61 +1356,78 @@ footer h1 {
     header {
         height: 5%;
     }
+
     .nameLink {
         font-size: 1.5em;
     }
+
     .nav h2 {
         font-size: 1.5em;
         margin-left: .5em;
     }
+
     .home {
         display: block;
         height: 45%;
         width: 100%;
     }
+
     .homeContent {
         display: inline-block;
     }
+
     .home h1 {
         font-size: 1.5em;
     }
+
     .about {
         width: 100%;
-        height: 100%;
+        height: 70%;
         padding-top: 4%;
     }
+
     .aboutImage1 img {
         float: left;
         width: 40%;
     }
-    #largeScreenImg {
-        display: none;
-    }
+
     .aboutMeDiv {
         padding: 0;
         height: 90%;
         width: 100%;
         background-color: #4F9BFD;
     }
+
     .aboutMeDiv h1 {
         padding: 0;
         text-align: center;
         font-size: 2.5em;
         line-height: .5em;
     }
+
     .aboutMeDiv h2 {
         padding: 0;
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
     }
+
+    .skillsDiv li {
+        float: left;
+        margin: 5px 5px 0 8px;
+    }
+    .skillsImg {
+        height: 25px;
+    }
+
     .work {
-        height: 110%;
+        height: 120%;
         display: block;
         width: 100%;
         margin: 0;
         padding: 0;
     }
+
     .projectsLeft {
         display: block;
         width: 100%;
@@ -1192,10 +1435,13 @@ footer h1 {
         margin: 0;
         padding-top: 3%;
     }
+
     .projectsLeft h1 {
-        display: inline;
-        font-size: 2.5em;
+        display: inline-block;
+        font-size: 3em;
+        margin-top: 20px;
     }
+
     .projectsLeft button {
         display: table;
         font-size: 1.5em;
@@ -1204,6 +1450,7 @@ footer h1 {
         margin-bottom: 10px;
         margin-top: 10px;
     }
+
     .projectsLeft h2 {
         display: block;
         margin: 0;
@@ -1211,12 +1458,14 @@ footer h1 {
         font-size: 1em;
         line-height: 1.5em;
     }
+
     .displayProjectsRight {
         width: 80%;
-        height: 55%;
+        height: 40%;
         display: block;
         margin-left: 10%;
     }
+
     .monitorDisplay {
         position: relative;
         top: 2.6%;
@@ -1225,63 +1474,77 @@ footer h1 {
         width: 94%;
         display: block;
     }
-    #golf img {
+
+    .golf img {
         height: 100%;
         width: 100%;
     }
-    #cti img {
+
+    .cti img {
         width: 100%;
         height: 100%;
     }
+
     .buttonDiv {
       position: absolute;
       z-index: 2;
       top: 40%;
       width: 100%;
     }
-    #forward {
+
+    .forward {
       float: right;
       font-size: 3em;
     }
-    #back {
+
+    .back {
       float: left;
       font-size: 3em;
     }
+
     .contact {
         display: block;
         background-color: rgb(110, 155, 211);
     }
+
     .contact h1 {
         padding-top: 10px;
         text-align: center;
         font-size: 2.5em;
     }
+
     .contact h2 {
         display: inline-block;
         margin-top: 10px;
         text-align: center;
         font-size: 2.0em;
     }
+
     .contact a {
         display: table;
         height: 100px;
         width: 100px;
         margin: 2% 0 0 0;
     }
-    #firsta {
+
+    .contact .firsta {
         margin-top: 10%;
         margin-left: 38%;
     }
-    #linkedin {
-        padding-top: 40px;
+
+    .contact .linkedin {
+        padding-top: 15%;
         margin-left: 38%;
     }
-    #github {
-        margin: 0 0 10% 38%;
+
+    .contact .github {
+        margin: 15% 0 10% 38%;
     }
+
     .contact img {
         display: block;
     }
+
     footer h1 {
         font-size: 1.5em;
         text-align: center;
@@ -1294,61 +1557,80 @@ footer h1 {
     header {
         height: 7%;
     }
+
     .nameLink {
         font-size: 1.5em;
     }
+
     .nav h2 {
         font-size: 1.5em;
         margin-left: .5em;
     }
+
     .home {
         height: 100%;
     }
+
     .home h1 {
         font-size: 2.3em;
     }
+
     .about {
         width: 100%;
         height: 100%;
     }
+
     .aboutImage1 img {
         float: left;
         width: 35%;
         height: 40%;
     }
-    #largeScreenImg {
-        display: none;
-    }
+
     .aboutMeDiv {
         height: 90%;
         width: 100%;
         background-color: #4F9BFD;
     }
+
     .aboutMeDiv h1 {
         padding-top: 0;
         text-align: center;
         font-size: 2.6em;
         line-height: .5em;
     }
+
     .aboutMeDiv h2 {
         text-align: center;
         line-height: 1.8em;
         font-size: 1.6em;
     }
+
+    .skillsDiv li {
+        float: left;
+        margin: 5px 3px 0 5px;
+    }
+    .skillsImg {
+        height: 25px;
+    }
+
     .work {
         height: 300%;
+        background-color: blue
         display: block;
     }
+
     .projectsLeft {
         display: block;
         width: 100%;
     }
+
     .projectsLeft h1 {
         display: block;
         padding-top: 10px;
         text-align: center;
         font-size: 2.5em;
     }
+
     .projectsLeft h2 {
         display: block;
         margin: 0;
@@ -1357,12 +1639,14 @@ footer h1 {
         font-size: 1.5em;
         line-height: 1.5em;
     }
+
     .displayProjectsRight {
         width: 80%;
         height: 50%;
         display: block;
         margin-left: 10%;
     }
+
     .monitorDisplay {
         position: relative;
         top: 3.5%;
@@ -1370,40 +1654,42 @@ footer h1 {
         height: 58%;
         width: 94%;
         display: block;
-        /*background-color: blue;*/
     }
-    #golf img {
-        height: 100%;
-        width: 100%;
-    }
+
     .buttonDiv {
       position: absolute;
       z-index: 2;
       top: 40%;
       width: 100%;
     }
-    #forward {
+
+    .forward {
       float: right;
       font-size: 3em;
     }
-    #back {
+
+    .back {
       float: left;
       font-size: 3em;
     }
-    #cti img {
+
+    .cti img {
         width: 100%;
         height: 100%;
     }
+
     .contact {
         display: block;
         height: 90%;
         background-color: rgb(110, 155, 211);
     }
+
     .contact h1 {
         padding-top: 10px;
         text-align: center;
         font-size: 2.5em;
     }
+
     .contact h2 {
         display: block;
         padding-top: 20px;
@@ -1412,22 +1698,62 @@ footer h1 {
         text-align: center;
         font-size: 2.0em;
     }
+
     .contact a {
         display: inline-block;
         height: 100px;
         width: 100px;
         margin: 10% 0 0 14%;
     }
-    #linkedin img {
+
+    .linkedin img {
         padding-bottom: 40px;
         width: 110%;
     }
+
     .contact img {
         width: 100%;
     }
+
     footer h1 {
         font-size: 1.5em;
         text-align: center;
         padding-top: 40px;
     }
+}
+
+@media screen and (max-device-width: 320px) {
+    .about {
+        height: 90%;
+    }
+    .skillsDiv li {
+        float: left;
+        margin: 5px 5px 0 8px;
+    }
+    .skillsImg {
+        height: 20px;
+    }
+
+    .displayProjectsRight {
+        height: 30%;
+    }
+
+    .work {
+        height: 130%;
+    }
+
+    .linkedin img {
+        padding-bottom: 20px;
+        width: 110%;
+    }
+
+    .contact img {
+        width: 100%;
+    }
+
+    .contact .firsta, .contact .linkedin, .contact .github {
+        margin-top: 3%;
+    }
+
+
 }

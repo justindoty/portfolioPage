@@ -1,7 +1,7 @@
 <!DOCTYPE html>
   <html ng-app="app">
     <head>
-      <meta charset="utf-8">
+      <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Justin Doty</title>
       <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -23,9 +23,9 @@
           <header>
             <h1 class="nameLink" ng-click="main.scrollTo('home')">Justin Doty</h1>
             <div class="nav">
-              <h2 ng-click="main.scrollTo('contact')">Contact</h2>
-              <h2 ng-click="main.scrollTo('work')">Work</h2>
-              <h2 ng-click="main.scrollTo('about')">About</h2>
+              <h2 class="navButton" ng-click="main.scrollTo('contact')">Contact</h2>
+              <h2 class="navButton" ng-click="main.scrollTo('work')">Work</h2>
+              <h2 class="navButton" ng-click="main.scrollTo('about')">About</h2>
             </div>
           </header>
           <section id='home' class="home">
@@ -52,6 +52,17 @@
             <!-- </div> -->
             </div>
           </section>
+          <section class="skills">
+            <div class='skillsWrapper'>
+                <div class="skillsDiv">
+                    <ul>
+                        <li ng-repeat="image in main.images">
+                            <img class="skillsImg" ng-src="{{image.image}}" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </section>
           <section id="work" class="work">
             <div class="projectsLeft">
               <h1>Projects</h1>
@@ -71,18 +82,18 @@
             </div>
             <div class="displayProjectsRight">
               <div class="monitorDisplay">
-                <div id="golf" ng-show="main.showProject.golf">
+                <div class="golf" ng-show="main.showProject.golf">
                   <div class="buttonDiv">
-                    <button id="back" ng-click="main.nextGolfImageB()"><i class="fa fa-chevron-left"></i>
+                    <button class="back" ng-click="main.nextGolfImageB()"><i class="fa fa-chevron-left"></i>
                     </button>
-                    <button id="forward" ng-click="main.nextGolfImageF()"><i class="fa fa-chevron-right"></i></button>
+                    <button class="forward" ng-click="main.nextGolfImageF()"><i class="fa fa-chevron-right"></i></button>
                   </div>
                   <img ng-src="{{main.golfImages}}" />
                 </div>
-                <div id="cti" ng-show="main.showProject.cti">
+                <div class="cti" ng-show="main.showProject.cti">
                 <div class="buttonDiv">
-                  <button id="back" ng-click="main.nextCtiImageB()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                  <button id="forward" ng-click="main.nextCtiImageF()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                  <button class="back" ng-click="main.nextCtiImageB()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                  <button class="forward" ng-click="main.nextCtiImageF()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
                   <img ng-src="{{main.ctiImages}}" />
                 </div>
@@ -96,9 +107,9 @@
             <h1>Contact</h1>
             <h2>Feel free to contact me if you have any questions or would like to connect.</h2>
 
-            <a id="firsta" href="mailto:justin@justindoty.com"><img src="/assets/emailicon.png" /></a>
-            <a id="linkedin" href="https://www.linkedin.com/in/justindoty1"><img src="/assets/linkedIn.png" alt="link to linked in" /></a>
-            <a id="github" href="https://github.com/justindoty"><img src="/assets/githublogo.png" alt="link to linked in" /></a>
+            <a class="firsta" href="mailto:justin@justindoty.com"><img src="/assets/emailicon.png" /></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/justindoty1"><img src="/assets/linkedIn.png" alt="link to linked in" /></a>
+            <a class="github" href="https://github.com/justindoty"><img src="/assets/githublogo.png" alt="link to linked in" /></a>
 
           </section>
           <footer>
