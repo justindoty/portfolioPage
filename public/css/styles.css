@@ -526,12 +526,6 @@ footer h1 {
         box-shadow: 2px 2px 2px rgb(120, 120, 120);
     }
 
-    .projectsLeft button:hover {
-        background-color: rgb(150, 150, 150);
-        text-decoration: none;
-        border: none;
-    }
-
     .displayProjectsRight {
         width: 50%;
         height: 80%;
