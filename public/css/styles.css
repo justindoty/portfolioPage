@@ -194,7 +194,7 @@ header {
     display: -webkit-flex;
     display: flex;
     flex-flow: row;
-    height: 60%;
+    height: 65%;
     background-color: hsl(203, 86%, 78%);
 }
 
