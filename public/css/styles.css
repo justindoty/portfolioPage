@@ -193,14 +193,12 @@ header {
     font-size: 5em;
 }
 
-
 /*~~~~~~~~ABOUT PAGE~~~~~~~~~~~*/
-
 .about {
     display: -webkit-flex;
     display: flex;
     flex-flow: row;
-    height: 65%;
+    height: 70%;
     background-color: #4F9BFD;
 }
 
@@ -213,7 +211,7 @@ header {
 .aboutMeDiv {
     width: 80%;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 20px;
     padding: 10px 10px 10px 10px;
     height: 100%;
 }
@@ -1725,7 +1723,7 @@ footer h1 {
 
 @media screen and (max-device-width: 320px) {
     .about {
-        height: 90%;
+        height: 100%;
     }
     .skillsDiv li {
         float: left;
@@ -1757,4 +1755,18 @@ footer h1 {
     }
 
 
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+
+.about {
+    height: 145%;
+}
+.skillsDiv li {
+    float: left;
+    margin: 5px 5px 0 5px;
+}
+.skillsImg {
+    height: 20px;
+}
 }
