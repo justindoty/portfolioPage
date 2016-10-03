@@ -1,4 +1,4 @@
-angular.module('app').controller('MainController', ['$http','$location','RouteService', '$anchorScroll', '$document', function($http,$location, RouteService, $anchorScroll, $document){
+angular.module('app').controller('MainController', ['$http','$location','RouteService', '$anchorScroll', '$document','$interval', function($http,$location, RouteService, $anchorScroll, $document, $interval){
   var vm = this;
 
 
@@ -134,4 +134,27 @@ vm.images = images;
       vm.ctiDesc = ctiDesc.desc[ctiNum];
     }
       vm.ctiImages = ctiImages.images[0];
+
+
+
+// vm.myInterval = 3000;
+
+// var slides = ['assets/JustinDoty.jpg','assets/zoey2.jpg','assets/fishingWithCharlotte.jpg','assets/mountainView.jpg'];
+    
+
+//  vm.slide = slides[0]; 
+  
+//  $interval(function(){
+//    if(vm.slide == slides[0])
+//        vm.slide = slides[1];
+//    else if(vm.slide == slides[1])
+//        vm.slide = slides[2];
+//   else if(vm.slide == slides[2])
+//        vm.slide = slides[3];
+//    else
+//         vm.slide = slides[0];
+//     }, 3000, 0);
+
+
+
 }]);

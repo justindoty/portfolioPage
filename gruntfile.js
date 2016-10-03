@@ -24,7 +24,7 @@ module.exports = function(grunt) {
       //    mangle: false
       //  },
        files: {
-         'public/assets/client.min.js': ['client/app.module.js', 'client/app.config.js', 'client/mainController.js',  'client/homeController.js', 'client/routeService.js']
+         'public/assets/client.min.js': ['client/app.module.js', 'client/app.config.js', 'client/mainController.js',  'client/homeController.js', 'client/routeService.js','client/aboutController.js']
        }
      }
    }

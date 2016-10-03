@@ -1,1 +1,1 @@
-angular.module('app', ['ngRoute','duScroll']);
+angular.module('app', ['ngRoute','duScroll','ui.bootstrap']);

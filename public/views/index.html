@@ -9,11 +9,14 @@
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
-  <!--<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" />-->
   <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/animate.css">
+  <!--<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" />-->
+  <!--<script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>  -->
   <script src="/vendors/angular/angular.min.js"></script>
   <script src="/vendors/angular-route/angular-route.min.js"></script>
   <script src="/vendors/angular-scroll/angular-scroll.min.js"></script>
+  <script src="/vendors/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
   <script src="/assets/client.min.js"></script>
   <link rel="stylesheet" href="vendors/foundation/css/foundation.css" />
   <link rel="stylesheet" href="css/newstylesheet.css" />
@@ -62,10 +65,9 @@
       </div>
       <div class="small-12 medium-12 large-6 columns ">
         <div class="about-image">
-          <image class="about-img" src="/assets/mountainView.jpg" alt="mountains">
+            <image src="assets/mountainView.jpg" alt="mountains">
         </div>
       </div>
-    </div>
   </section>
   <section class="skills">
     <div class="expanded row">
@@ -84,14 +86,14 @@
         <div class="projectsLeft">
           <h1>Projects</h1>
           <button id="projectName" ng-click="main.projectClick('golf')">GOLF USA</button>
-          <div class="description" ng-show="main.showProject.golf">
+          <div class="description animated slideInLeft" ng-show="main.showProject.golf">
             <h2>{{main.gusaDesc}}</h2>
-            <h2 ng-show="main.showLink"><a href="https://golfusarewards.herokuapp.com/">GolfUSA Rewards App</a>
+            <h2 ng-show="main.showLink"><a class="projectlink" href="https://golfusarewards.herokuapp.com/">GolfUSA Rewards App</a>
             </h2>
           </div>
           <button id="projectName" ng-click="main.projectClick('cti')">Compatible Technologies International</button>
           <!-- <button ng-click="main.projectClick('bsbaits')">BarneStormBaits</button> -->
-          <div class="description" ng-show="main.showProject.cti">
+          <div class="description animated slideInLeft" ng-show="main.showProject.cti">
             <h2>{{main.ctiDesc}}</h2>
           </div>
           <h2 ng-hide="main.showProject.cti">More coming soon...</h2>
@@ -145,8 +147,6 @@
       </div>
     </div>
   </footer>
-
-
 
   <script src="/assets/vendors/js/vendor/jquery.js"></script>
   <script src="/assets/vendors/js/vendor/what-input.js"></script>

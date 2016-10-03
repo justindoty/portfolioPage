@@ -1,6 +1,7 @@
-angular.module('app').controller('AboutController', ['$http', '$location', function($http, $location){
+angular.module('app').controller('AboutController', ['$http', '$location','$scope', function($http, $location, $scope){
 
   var vm = this;
+
 
 
 
