@@ -1,0 +1,916 @@
+/* ------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:focus {
+    outline-width: 0;
+}
+
+html {
+    overflow-y: scroll; /* Always show a vertical scrollbar, even when there is no scrolling */
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* ------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+    display: block;
+}
+
+audio, canvas, video, progress, picture {
+    display: inline-block;
+}
+
+template {
+    display: none;
+}
+
+/* ------------------------------------------------
+ Form Reset Styles
+------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+// ------RESET ^--------
+
+$font-stack: 'Fjalla One', sans-serif;
+$logo-font: 'Russo One', sans-serif;
+$body-color:    rgb(253,253,253);
+$main-color:    rgb(179,185,156);
+$navbar:        rgb(39,55,58);
+$highlight-red: rgb(189,53,39);
+$footer:        rgb(34,34,34);
+$nav-color:     rgba(0, 0, 0, 0.7);
+
+// -------Start Project----------
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    font-size: 62.5%;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:visited {
+    color: inherit;
+}
+
+// -------Header-------
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+   .navbar {
+    height:60px;
+    background-color: $nav-color;
+    box-sizing: border-box;
+    .brand {
+        font: 4em $logo-font;
+        color: $body-color;
+        padding: 0px 0 0 10px;
+    }
+    a:hover, li:hover {
+        color:$main-color;
+    }
+    li {
+        font-size: 2em;
+        background-color: inherit;
+        color: $body-color;
+    }
+    ul {
+        padding: 5px 10px 0 0;        
+        background-color: inherit;
+    }
+}
+
+}
+
+
+// -------hero-------
+
+.hero {
+    width: 100%;
+    min-height: 50%;
+    box-sizing: border-box;
+    background-image: url('/assets/grey_wash_wall.png');
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-repeat: repeat;
+    
+.heroContent {
+    box-sizing: border-box;
+    max-width: 60%;
+    padding-top: 10%;
+    margin-left: 25%;
+}
+
+h1 {
+    color: $body-color;
+    line-height: 1.5em;
+    font-size: 5em;
+}
+
+}
+
+// ------about--------
+
+.about {
+    box-sizing: border-box;
+    padding: 80px 80px;
+    background-color: hsl(203, 86%, 95%);
+.about-me {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+}
+
+ h2 {
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.p1 {
+    margin-top: 10px;
+}
+
+.p2 {
+    margin-top: 10px;
+}
+
+.about-image {
+    box-sizing: border-box;
+    margin: 60px 0 80px 0;
+    height: 50%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: inherit;
+    -webkit-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
+}
+.about-img {
+    display: block;
+}
+}
+
+// ---------skills---------
+
+.skills  {
+   padding: 20px 0 80px 10px;
+   width: 100%;
+   margin: 0 auto;
+
+.skillsDiv {
+    margin: 0 auto;
+}
+.skillsDiv li {
+    margin: 10px;
+    display: inline-block;
+  
+}
+.skillsImg {
+    height: 45px;
+}
+
+}
+
+// ----work-------
+
+.work {
+    padding: 40px 80px;
+
+.projectsLeft {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projectsLeft h1 {
+    font-size: 4em;
+}
+
+.projectsLeft h2 {
+    display: block;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.projectsLeft button {
+    display: table;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.5em;
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.projectsLeft button:hover {
+    background-color: hsl(203, 86%, 70%);
+    text-decoration: none;
+    border: none;
+}
+
+
+.displayProjectsRight {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/assets/monitorBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.displayProjectsRight h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.monitorDisplay {
+    position: relative;
+    top: 2.0%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%;
+}
+
+.golf img {
+    height: 100%;
+    width: 100%;
+}
+.monitorDisplay button:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+.buttonDiv button {
+    background-color: transparent;
+    border: none;
+}
+.buttonDiv {
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  width: 100%;
+}
+
+.forward {
+  float: right;
+  font-size: 5em;
+}
+.back {
+  float: left;
+  font-size: 5em;
+}
+
+.cti img {
+    height: 100%;
+    width: 100%;
+}
+}
+
+// -------contact------
+
+footer {
+    padding: 30px 30px;
+    min-height: 400px;
+    background-color: $navbar;
+    text-align: center;
+    background-image: url('/assets/grey_wash_wall.png');
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-repeat: repeat;
+
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: $body-color;
+}
+
+h2 {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+ a {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+ }
+
+img {
+    width: 100%;
+}
+
+.contact-icons{
+   padding-top: 30px;
+}
+.contact-icons .mail {
+   text-align: right;
+}
+.contact-icons .linkedin a {
+   padding-top: 30px;
+}
+.contact-icons .github {
+   text-align:  left;
+} 
+}
+
+
+// ----begin Media Q's------
+
+@media screen and (min-width: 2000px) {
+.skills  {
+   width: 80%;
+   margin: 0 auto;
+    
+.skillsDiv li {
+    margin: 20px;
+}
+.skillsImg {
+    height: 60px;
+}
+}
+//------------------------------------------------
+.about {
+.about-me {
+    width: 90%;
+    padding: 50px 50px;
+}
+h1 {
+    font-size: 3.5em;
+
+}
+ h2 {
+    line-height: 2.0em;
+    font-size: 2.8em;
+}
+.p1 {
+    margin-top: 30px;
+}
+.p2 {
+    margin-top: 30px;
+}
+}
+// -----------------
+.work {
+
+.displayProjectsRight {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/assets/monitorBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.displayProjectsRight h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.monitorDisplay {
+    position: relative;
+    top: 2.2%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%;
+}
+
+.buttonDiv button {
+    background-color: transparent;
+    border: none;
+}
+.buttonDiv {
+  top: 350px;
+}
+}
+
+}
+@media screen and (max-width: 2000px) {
+.work {
+
+.displayProjectsRight {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/assets/monitorBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.displayProjectsRight h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.monitorDisplay {
+    position: relative;
+    top: 2.2%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%;
+}
+
+.buttonDiv button {
+    background-color: transparent;
+    border: none;
+}
+.buttonDiv {
+  top: 25;
+}
+}
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+.hero {
+    
+    
+.heroContent {
+    box-sizing: border-box;
+    max-width: 60%;
+    padding-top: 80px;
+}
+
+h1 {
+    color: $body-color;
+    line-height: 1.5em;
+    font-size: 4em;
+}
+
+}
+//------------------------------------------------
+.about {
+  
+.about-me {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+}
+
+ h2 {
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.p1 {
+    margin-top: 20px;
+}
+
+.p2 {
+    margin-top: 20px;
+}
+
+.about-img {
+    display: block;
+}
+}
+
+//------------------------------------------------
+.medium-12 {
+    width: 100%;
+}
+.work {
+
+.monitorDisplay {
+    position: relative;
+    top: 3.5%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%;
+}
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.medium-12 {
+    width: 100%;
+}
+.work {
+
+.monitorDisplay {
+    position: relative;
+    top: 2.4%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%;
+}
+}
+}
+
+@media screen and (max-width: 375px) {
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+   .navbar {
+    height:120px;
+    background-color: $nav-color;
+    box-sizing: border-box;
+    .brand {
+        font: 4em $logo-font;
+        color: $body-color;
+        padding-left: 70px;
+        
+    }
+    a:hover, li:hover {
+        color:$main-color;
+    }
+    li {
+        font-size: 2em;
+        background-color: inherit;
+        color: $body-color;
+    }
+    ul {
+        padding: 5px 0 0 60px;        
+        background-color: inherit;
+    }
+}
+
+}
+
+
+// -------hero-------
+
+.hero {
+    width: 100%;
+    min-height: 50%;
+    box-sizing: border-box;
+
+    
+.heroContent {
+    box-sizing: border-box;
+    max-width: 60%;
+    padding-top: 110px;
+    margin-left: 25%;
+}
+
+h1 {
+    color: $body-color;
+    line-height: 1em;
+    font-size: 3em;
+    padding: 20px 0 20px 0;
+}
+
+}
+
+// ------about--------
+
+.about {
+    box-sizing: border-box;
+    padding: 60px 60px;
+.about-me {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    color: rgb(0, 0, 0);
+}
+
+ h2 {
+    text-align: center;
+    line-height: 2em;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+}
+
+.p1 {
+    margin-top: 10px;
+}
+
+.p2 {
+    margin-top: 20px;
+}
+
+.about-image {
+    box-sizing: border-box;
+    margin: 60px 0 80px 0;
+    height: 50%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: inherit;
+    -webkit-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
+}
+.about-img {
+    display: block;
+}
+}
+
+// ---------skills---------
+
+.skills  {
+   padding: 20px 0 40px 10px;
+   width: 100%;
+   margin: 0 auto;
+
+.skillsDiv {
+    margin: 0 auto;
+}
+.skillsDiv li {
+    margin: 10px;
+    display: inline-block;
+  
+}
+.skillsImg {
+    height: 30px;
+}
+
+}
+
+// ----work-------
+
+.work {
+    padding: 40px 80px;
+
+.projectsLeft {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.projectsLeft h1 {
+    font-size: 3em;
+}
+
+.projectsLeft h2 {
+    width: 100%;
+    display: block;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.projectsLeft button {
+    display: table;
+    font-size: 2.5em;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.5em;
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.projectsLeft button:hover {
+    background-color: hsl(203, 86%, 70%);
+    text-decoration: none;
+    border: none;
+}
+
+
+.displayProjectsRight {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/assets/monitorBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.displayProjectsRight h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.monitorDisplay {
+    position: relative;
+    top: 2.0%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%;
+}
+
+.golf img {
+    height: 100%;
+    width: 100%;
+}
+.monitorDisplay button:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+.buttonDiv button {
+    background-color: transparent;
+    border: none;
+}
+.buttonDiv {
+  position: absolute;
+  z-index: 2;
+  top: 60%;
+  width: 100%;
+}
+
+.forward {
+  float: right;
+  font-size: 5em;
+}
+.back {
+  float: left;
+  font-size: 5em;
+}
+
+.cti img {
+    height: 100%;
+    width: 100%;
+}
+}
+
+// -------contact------
+
+footer {
+    padding: 30px 30px;
+    min-height: 400px;
+    background-color: $navbar;
+    text-align: center;
+    background-image: url('/assets/grey_wash_wall.png');
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-repeat: repeat;
+
+
+h1 {
+    text-align: center;
+    font-size: 4em;
+    color: $body-color;
+}
+
+h2 {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+ a {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+ }
+
+img {
+    width: 100%;
+}
+
+.contact-icons{
+   padding-top: 30px;
+}
+.contact-icons .mail {
+   text-align: right;
+}
+.contact-icons .linkedin a {
+   padding-top: 30px;
+}
+.contact-icons .github {
+   text-align:  left;
+} 
+}
+}

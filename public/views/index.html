@@ -1,122 +1,157 @@
 <!DOCTYPE html>
-  <html ng-app="app">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Justin Doty</title>
-      <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-      <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-      <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-      <link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" />
-      <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.min.css" />
-      <script src="/vendors/angular/angular.min.js"></script>
-      <script src="/vendors/angular-route/angular-route.min.js"></script>
-      <script src="/vendors/angular-scroll/angular-scroll.min.js"></script>
-      <script src="/assets/client.min.js"></script>
-      <!-- <script src="/vendors/angular-animate/angular-animate.min.js"></script> -->
-      <!-- <script src="/vendors/angular-ui-bootstrap/ui-bootstrap.js"></script> -->
-      <link rel="stylesheet" href="css/styles.css" />
-      <base href="/" />
-    </head>
-      <body ng-controller="MainController as main">
-        <div class="wrapper">
-          <header>
-            <h1 class="nameLink" ng-click="main.scrollTo('home')">Justin Doty</h1>
-            <div class="nav">
-              <h2 class="navButton" ng-click="main.scrollTo('contact')">Contact</h2>
-              <h2 class="navButton" ng-click="main.scrollTo('work')">Work</h2>
-              <h2 class="navButton" ng-click="main.scrollTo('about')">About</h2>
-            </div>
-          </header>
-          <section id='home' class="home">
-            <div class="homeBGimage">
-              <div class="homeContent">
-                <h1>Hello! My name is Justin. I'm a software developer in Minnesota. This page is still under constuction, but feel free to look around. <br />- Justin</h1>
-              </div>
+<html ng-app="app">
 
-            </div>
-          </section>
-          <section id='about' class="about">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin Doty</title>
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <!--<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.min.css" />-->
+  <link rel="stylesheet" href="/vendors/font-awesome/css/font-awesome.min.css" />
+  <script src="/vendors/angular/angular.min.js"></script>
+  <script src="/vendors/angular-route/angular-route.min.js"></script>
+  <script src="/vendors/angular-scroll/angular-scroll.min.js"></script>
+  <script src="/assets/client.min.js"></script>
+  <link rel="stylesheet" href="vendors/foundation/css/foundation.css" />
+  <link rel="stylesheet" href="css/newstylesheet.css" />
+  <base href="/" />
+</head>
 
-            <div class="aboutMeDiv">
-              <div class="aboutImage1">
-                <!-- <img  src="/assets/JustinDoty.jpg" alt="picture of justindoty"/> -->
-              </div>
-              <h1>About Me</h1>
-              <br /><br />
-              <h2 class="p1">I'm a full stack software engineering graduate of Prime Digital Academy. I have a passion for Web and Software develoment and I love building useful as well as beautiful appications. I love meeting new clients and helping them turn their ideas into reality. I believe that with dedication, honesty, hardwork, and a great team, anything is possible. </h2>
-              <br /><br />
-              <h2 class="p2">When I'm not working I enjoy spending time with my amazing family, my girlfriend Nikki, and my lab Zoey. I love the outdoors and enjoy golfing, fishing, and hockey. I'm also a huge movie fan and love great video games. I enjoy attending tech meetups and taking online courses in my free time, constantly trying to learn more. I'm also my friends and familys tech support, wich means I'm always on call, but I love technolgy and helping others so I wouldnt change a thing. </h2>
+<body ng-controller="MainController as main">
 
-            </div>
-          </section>
-          <section class="skills">
-            <div class='skillsWrapper'>
-                <div class="skillsDiv">
-                    <ul>
-                        <li ng-repeat="image in main.images">
-                            <img class="skillsImg" ng-src="{{image.image}}" />
-                        </li>
-                    </ul>
-                </div>
-            </div>
-          </section>
-          <section id="work" class="work">
-            <div class="projectsLeft">
-              <h1>Projects</h1>
-              <button id="projectName" ng-click="main.projectClick('golf')">GOLF USA</button>
-              <div class="description" ng-show="main.showProject.golf">
-                <h2>{{main.gusaDesc}}</h2>
-                <h2 ng-show="main.showLink"><a href="https://golfusarewards.herokuapp.com/">GolfUSA Rewards App</a>
-                </h2>
-              </div>
-
-              <button id="projectName" ng-click="main.projectClick('cti')">Compatible Technologies International</button>
-              <!-- <button ng-click="main.projectClick('bsbaits')">BarneStormBaits</button> -->
-              <div class="description" ng-show="main.showProject.cti">
-                <h2>{{main.ctiDesc}}</h2>
-              </div>
-              <h2 ng-hide="main.showProject.cti">More coming soon...</h2>
-            </div>
-            <div class="displayProjectsRight">
-              <div class="monitorDisplay">
-                <div class="golf" ng-show="main.showProject.golf">
-                  <div class="buttonDiv">
-                    <button class="back" ng-click="main.nextGolfImageB()"><i class="fa fa-chevron-left"></i>
-                    </button>
-                    <button class="forward" ng-click="main.nextGolfImageF()"><i class="fa fa-chevron-right"></i></button>
-                  </div>
-                  <img ng-src="{{main.golfImages}}" />
-                </div>
-                <div class="cti" ng-show="main.showProject.cti">
-                <div class="buttonDiv">
-                  <button class="back" ng-click="main.nextCtiImageB()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                  <button class="forward" ng-click="main.nextCtiImageF()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
-                </div>
-                  <img ng-src="{{main.ctiImages}}" />
-                </div>
-                <!-- <div id="bsbaits" ng-show="main.showProject.bsbaits">
-                  <img ng-src="assets/Under-Construction.jpg" />
-                </div> -->
-              </div>
-            </div>
-          </section>
-          <section id="contact" class="contact">
-            <h1>Contact</h1>
-            <h2>Feel free to contact me if you have any questions or would like to connect.</h2>
-
-            <a class="firsta" href="mailto:justin@justindoty.com"><img src="/assets/emailicon.png" /></a>
-            <a class="linkedin" href="https://www.linkedin.com/in/justindoty1"><img src="/assets/linkedIn.png" alt="link to linked in" /></a>
-            <a class="github" href="https://github.com/justindoty"><img src="/assets/githublogo.png" alt="link to linked in" /></a>
-
-          </section>
-          <footer>
-            <h1>justin@justindoty.com</h1>
-
-          </footer>
-
-          <!-- <div ng-view>
-          </div> -->
+  <header>
+    <div class="top-bar navbar">
+      <div class="top-bar-title">
+        <h1 class="brand"><a ng-click="main.scrollTo('home')">Justin Doty</a></h1>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a ng-click="main.scrollTo('about')">About</a></li>
+          <li><a ng-click="main.scrollTo('work')">Work</a></li>
+          <li><a ng-click="main.scrollTo('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section id='home' class="hero">
+    <div class='wrapper'>
+      <div class="heroContent">
+        <h1>Welcome, This page is under constuction, but feel free to look around.</h1>
+        <h1>-Justin</h1>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about">
+    <div class="expanded row">
+      <div class="small-12 medium-12 large-6 columns">
+        <div class="about-me">
+          <h1>About Me</h1>
+          <h2 class="p1">I'm a full stack software engineering graduate of Prime Digital Academy. I have a passion for Web and Software
+            develoment and I love building useful as well as beautiful appications. I love meeting new clients and helping
+            them turn their ideas into reality. I believe that with dedication, honesty, hardwork, and a great team, anything
+            is possible. </h2>
+          <h2 class="p2">When I'm not working I enjoy spending time with my amazing family, my girlfriend, and my dog Zoey. I love the outdoors
+            and enjoy golfing, fishing, and hockey. I'm also a huge movie fan and love great video games. I enjoy attending
+            tech meetups and taking online courses in my free time, constantly trying to learn more. I'm also my friends
+            and familys tech support, wich means I'm always on call, but I love technolgy and helping others so I wouldnt
+            change a thing. </h2>
         </div>
-      </body>
-  </html>
+      </div>
+      <div class="small-12 medium-12 large-6 columns ">
+        <div class="about-image">
+          <image class="about-img" src="/assets/mountainView.jpg" alt="mountains">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills">
+    <div class="expanded row">
+      <div class="small-12 medium-12 columns skillsDiv">
+        <ul>
+          <li ng-repeat="image in main.images">
+            <img class="skillsImg" ng-src="{{image.image}}" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="work" class="work">
+    <div class="expanded row">
+      <div class="small-12 medium-12 large-6 columns">
+        <div class="projectsLeft">
+          <h1>Projects</h1>
+          <button id="projectName" ng-click="main.projectClick('golf')">GOLF USA</button>
+          <div class="description" ng-show="main.showProject.golf">
+            <h2>{{main.gusaDesc}}</h2>
+            <h2 ng-show="main.showLink"><a href="https://golfusarewards.herokuapp.com/">GolfUSA Rewards App</a>
+            </h2>
+          </div>
+          <button id="projectName" ng-click="main.projectClick('cti')">Compatible Technologies International</button>
+          <!-- <button ng-click="main.projectClick('bsbaits')">BarneStormBaits</button> -->
+          <div class="description" ng-show="main.showProject.cti">
+            <h2>{{main.ctiDesc}}</h2>
+          </div>
+          <h2 ng-hide="main.showProject.cti">More coming soon...</h2>
+        </div>
+      </div>
+      <div class="small-12 medium-12 large-6 columns about-image">
+        <div class="displayProjectsRight">
+          <div class="monitorDisplay">
+            <div class="golf" ng-show="main.showProject.golf">
+              <div class="buttonDiv">
+                <button class="back" ng-click="main.nextGolfImageB()"><i class="fa fa-chevron-left"></i>
+                                </button>
+                <button class="forward" ng-click="main.nextGolfImageF()"><i class="fa fa-chevron-right"></i></button>
+              </div>
+              <img ng-src="{{main.golfImages}}" />
+            </div>
+            <div class="cti" ng-show="main.showProject.cti">
+              <div class="buttonDiv">
+                <button class="back" ng-click="main.nextCtiImageB()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="forward" ng-click="main.nextCtiImageF()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+              </div>
+              <img ng-src="{{main.ctiImages}}" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="contact">
+    <div class="expanded row">
+      <div class="small-12 medium-12 large-12 columns">
+        <h1>Contact</h1>
+      </div>
+    </div>
+
+    <div class="expanded row">
+      <div class="small-12 medium-4 large-4 columns contact-icons">
+        <div class="contact-icons mail ">
+          <a href="mailto:justin@justindoty.com"><img src="/assets/emailicon.png" /></a>
+        </div>
+      </div>
+      <div class="small-12 medium-4 large-4 columns contact-icons">
+        <div class="contact-icons linkedin">
+          <a href="https://www.linkedin.com/in/justindoty1"><img src="/assets/linkedIn.png" alt="link to linked in" /></a>
+        </div>
+      </div>
+      <div class="small-12 medium-4 large-4 columns contact-icons">
+        <div class="contact-icons github">
+          <a href="https://github.com/justindoty"><img src="/assets/githublogo.png" alt="link to linked in" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="/assets/vendors/js/vendor/jquery.js"></script>
+  <script src="/assets/vendors/js/vendor/what-input.js"></script>
+  <script src="/assets/vendors/js/vendor/foundation.min.js"></script>
+  <script src="/assets/vendors/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,619 @@
+/* ------------------------------------------------
+RESET CSS (thanks Eric Meyer)
+------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:focus {
+  outline-width: 0; }
+
+html {
+  overflow-y: scroll;
+  /* Always show a vertical scrollbar, even when there is no scrolling */ }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+/* ------------------------------------------------
+ HTML5 Element Reset
+------------------------------------------------ */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+audio, canvas, video, progress, picture {
+  display: inline-block; }
+
+template {
+  display: none; }
+
+/* ------------------------------------------------
+ Form Reset Styles
+------------------------------------------------ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-size: 62.5%;
+  font-family: 'Fjalla One', sans-serif; }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+a:visited {
+  color: inherit; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  header .navbar {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box; }
+    header .navbar .brand {
+      font: 4em "Russo One", sans-serif;
+      color: #fdfdfd;
+      padding: 0px 0 0 10px; }
+    header .navbar a:hover, header .navbar li:hover {
+      color: #b3b99c; }
+    header .navbar li {
+      font-size: 2em;
+      background-color: inherit;
+      color: #fdfdfd; }
+    header .navbar ul {
+      padding: 5px 10px 0 0;
+      background-color: inherit; }
+
+.hero {
+  width: 100%;
+  min-height: 50%;
+  box-sizing: border-box;
+  background-image: url("/assets/grey_wash_wall.png");
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  background-repeat: repeat; }
+  .hero .heroContent {
+    box-sizing: border-box;
+    max-width: 60%;
+    padding-top: 10%;
+    margin-left: 25%; }
+  .hero h1 {
+    color: #fdfdfd;
+    line-height: 1.5em;
+    font-size: 5em; }
+
+.about {
+  box-sizing: border-box;
+  padding: 80px 80px;
+  background-color: #e7f5fd; }
+  .about .about-me {
+    width: 100%; }
+  .about h1 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    color: black; }
+  .about h2 {
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 2em;
+    color: black; }
+  .about .p1 {
+    margin-top: 10px; }
+  .about .p2 {
+    margin-top: 10px; }
+  .about .about-image {
+    box-sizing: border-box;
+    margin: 60px 0 80px 0;
+    height: 50%;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: inherit;
+    -webkit-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5); }
+  .about .about-img {
+    display: block; }
+
+.skills {
+  padding: 20px 0 80px 10px;
+  width: 100%;
+  margin: 0 auto; }
+  .skills .skillsDiv {
+    margin: 0 auto; }
+  .skills .skillsDiv li {
+    margin: 10px;
+    display: inline-block; }
+  .skills .skillsImg {
+    height: 45px; }
+
+.work {
+  padding: 40px 80px; }
+  .work .projectsLeft {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+  .work .projectsLeft h1 {
+    font-size: 4em; }
+  .work .projectsLeft h2 {
+    display: block;
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 15px;
+    padding: 10px;
+    line-height: 1.5em; }
+  .work .projectsLeft button {
+    display: table;
+    font-size: 2.5em;
+    color: black;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.5em;
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 5px; }
+  .work .projectsLeft button:hover {
+    background-color: #71c2f4;
+    text-decoration: none;
+    border: none; }
+  .work .displayProjectsRight {
+    width: 100%;
+    min-height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/assets/monitorBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .work .displayProjectsRight h1 {
+    font-size: 50px;
+    color: white; }
+  .work .monitorDisplay {
+    position: relative;
+    top: 2.0%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%; }
+  .work .golf img {
+    height: 100%;
+    width: 100%; }
+  .work .monitorDisplay button:focus {
+    outline: 0;
+    text-decoration: none; }
+  .work .buttonDiv button {
+    background-color: transparent;
+    border: none; }
+  .work .buttonDiv {
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    width: 100%; }
+  .work .forward {
+    float: right;
+    font-size: 5em; }
+  .work .back {
+    float: left;
+    font-size: 5em; }
+  .work .cti img {
+    height: 100%;
+    width: 100%; }
+
+footer {
+  padding: 30px 30px;
+  min-height: 400px;
+  background-color: #27373a;
+  text-align: center;
+  background-image: url("/assets/grey_wash_wall.png");
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  background-repeat: repeat; }
+  footer h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #fdfdfd; }
+  footer h2 {
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5em; }
+  footer a {
+    display: inline-block;
+    height: 100px;
+    width: 100px; }
+  footer img {
+    width: 100%; }
+  footer .contact-icons {
+    padding-top: 30px; }
+  footer .contact-icons .mail {
+    text-align: right; }
+  footer .contact-icons .linkedin a {
+    padding-top: 30px; }
+  footer .contact-icons .github {
+    text-align: left; }
+
+@media screen and (min-width: 2000px) {
+  .skills {
+    width: 80%;
+    margin: 0 auto; }
+    .skills .skillsDiv li {
+      margin: 20px; }
+    .skills .skillsImg {
+      height: 60px; }
+
+  .about .about-me {
+    width: 90%;
+    padding: 50px 50px; }
+  .about h1 {
+    font-size: 3.5em; }
+  .about h2 {
+    line-height: 2.0em;
+    font-size: 2.8em; }
+  .about .p1 {
+    margin-top: 30px; }
+  .about .p2 {
+    margin-top: 30px; }
+
+  .work .displayProjectsRight {
+    width: 100%;
+    height: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/assets/monitorBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .work .displayProjectsRight h1 {
+    font-size: 50px;
+    color: white; }
+  .work .monitorDisplay {
+    position: relative;
+    top: 2.2%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%; }
+  .work .buttonDiv button {
+    background-color: transparent;
+    border: none; }
+  .work .buttonDiv {
+    top: 350px; } }
+@media screen and (max-width: 2000px) {
+  .work .displayProjectsRight {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("/assets/monitorBG3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%; }
+  .work .displayProjectsRight h1 {
+    font-size: 50px;
+    color: white; }
+  .work .monitorDisplay {
+    position: relative;
+    top: 2.2%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%; }
+  .work .buttonDiv button {
+    background-color: transparent;
+    border: none; }
+  .work .buttonDiv {
+    top: 25; } }
+@media screen and (max-width: 1024px) {
+  .hero .heroContent {
+    box-sizing: border-box;
+    max-width: 60%;
+    padding-top: 80px; }
+  .hero h1 {
+    color: #fdfdfd;
+    line-height: 1.5em;
+    font-size: 4em; }
+
+  .about .about-me {
+    width: 100%; }
+  .about h1 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    color: black; }
+  .about h2 {
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 2em;
+    color: black; }
+  .about .p1 {
+    margin-top: 20px; }
+  .about .p2 {
+    margin-top: 20px; }
+  .about .about-img {
+    display: block; }
+
+  .medium-12 {
+    width: 100%; }
+
+  .work .monitorDisplay {
+    position: relative;
+    top: 3.5%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%; } }
+@media screen and (max-width: 768px) {
+  .medium-12 {
+    width: 100%; }
+
+  .work .monitorDisplay {
+    position: relative;
+    top: 2.4%;
+    left: 2.8%;
+    height: 40%;
+    width: 94%; } }
+@media screen and (max-width: 375px) {
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 3; }
+    header .navbar {
+      height: 120px;
+      background-color: rgba(0, 0, 0, 0.7);
+      box-sizing: border-box; }
+      header .navbar .brand {
+        font: 4em "Russo One", sans-serif;
+        color: #fdfdfd;
+        padding-left: 70px; }
+      header .navbar a:hover, header .navbar li:hover {
+        color: #b3b99c; }
+      header .navbar li {
+        font-size: 2em;
+        background-color: inherit;
+        color: #fdfdfd; }
+      header .navbar ul {
+        padding: 5px 0 0 60px;
+        background-color: inherit; }
+
+  .hero {
+    width: 100%;
+    min-height: 50%;
+    box-sizing: border-box; }
+    .hero .heroContent {
+      box-sizing: border-box;
+      max-width: 60%;
+      padding-top: 110px;
+      margin-left: 25%; }
+    .hero h1 {
+      color: #fdfdfd;
+      line-height: 1em;
+      font-size: 3em;
+      padding: 20px 0 20px 0; }
+
+  .about {
+    box-sizing: border-box;
+    padding: 60px 60px; }
+    .about .about-me {
+      width: 100%; }
+    .about h1 {
+      text-align: center;
+      font-size: 3em;
+      line-height: 1em;
+      color: black; }
+    .about h2 {
+      text-align: center;
+      line-height: 2em;
+      font-size: 2em;
+      color: black; }
+    .about .p1 {
+      margin-top: 10px; }
+    .about .p2 {
+      margin-top: 20px; }
+    .about .about-image {
+      box-sizing: border-box;
+      margin: 60px 0 80px 0;
+      height: 50%;
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+      background-color: inherit;
+      -webkit-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+      box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5); }
+    .about .about-img {
+      display: block; }
+
+  .skills {
+    padding: 20px 0 40px 10px;
+    width: 100%;
+    margin: 0 auto; }
+    .skills .skillsDiv {
+      margin: 0 auto; }
+    .skills .skillsDiv li {
+      margin: 10px;
+      display: inline-block; }
+    .skills .skillsImg {
+      height: 30px; }
+
+  .work {
+    padding: 40px 80px; }
+    .work .projectsLeft {
+      width: 100%;
+      margin: 0 auto; }
+    .work .projectsLeft h1 {
+      font-size: 3em; }
+    .work .projectsLeft h2 {
+      width: 100%;
+      display: block;
+      font-size: 2em;
+      color: black;
+      margin-bottom: 15px;
+      padding: 10px;
+      line-height: 1.5em; }
+    .work .projectsLeft button {
+      display: table;
+      font-size: 2.5em;
+      color: black;
+      background-color: white;
+      margin: auto;
+      padding: 10px;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      line-height: 1.5em;
+      -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 5px; }
+    .work .projectsLeft button:hover {
+      background-color: #71c2f4;
+      text-decoration: none;
+      border: none; }
+    .work .displayProjectsRight {
+      width: 100%;
+      min-height: 500px;
+      margin: 0 auto;
+      text-align: center;
+      background-image: url("/assets/monitorBG3.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%; }
+    .work .displayProjectsRight h1 {
+      font-size: 50px;
+      color: white; }
+    .work .monitorDisplay {
+      position: relative;
+      top: 2.0%;
+      left: 2.8%;
+      height: 40%;
+      width: 94%; }
+    .work .golf img {
+      height: 100%;
+      width: 100%; }
+    .work .monitorDisplay button:focus {
+      outline: 0;
+      text-decoration: none; }
+    .work .buttonDiv button {
+      background-color: transparent;
+      border: none; }
+    .work .buttonDiv {
+      position: absolute;
+      z-index: 2;
+      top: 60%;
+      width: 100%; }
+    .work .forward {
+      float: right;
+      font-size: 5em; }
+    .work .back {
+      float: left;
+      font-size: 5em; }
+    .work .cti img {
+      height: 100%;
+      width: 100%; }
+
+  footer {
+    padding: 30px 30px;
+    min-height: 400px;
+    background-color: #27373a;
+    text-align: center;
+    background-image: url("/assets/grey_wash_wall.png");
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    background-repeat: repeat; }
+    footer h1 {
+      text-align: center;
+      font-size: 4em;
+      color: #fdfdfd; }
+    footer h2 {
+      padding-top: 20px;
+      margin: auto;
+      text-align: center;
+      font-size: 2.5em; }
+    footer a {
+      display: inline-block;
+      height: 100px;
+      width: 100px; }
+    footer img {
+      width: 100%; }
+    footer .contact-icons {
+      padding-top: 30px; }
+    footer .contact-icons .mail {
+      text-align: right; }
+    footer .contact-icons .linkedin a {
+      padding-top: 30px; }
+    footer .contact-icons .github {
+      text-align: left; } }
+
+/*# sourceMappingURL=newstylesheet.css.map */

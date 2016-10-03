@@ -51,6 +51,7 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
       {image:'/assets/jquerylogo.png'},
       {image:'/assets/nodejslogo.png'},
       {image:'/assets/mongologo.png'},
+      {image:'/assets/sasslogo.svg'},
       {image:'/assets/Npmlogo.png'}
     ];
 
@@ -100,9 +101,12 @@ vm.images = images;
     if (num > 3) {
       num = 0;
     }
-    if (num == 3) {
+    if (num === 3 ) {
       vm.showLink = true;
+    } else {
+      vm.showLink = false;
     }
+    
     console.log('num', num);
     vm.golfImages = golfImages.images[num];
     vm.gusaDesc = gusaDesc.desc[num];
