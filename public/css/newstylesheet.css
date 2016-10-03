@@ -174,19 +174,19 @@ header {
     margin-top: 10px; }
   .about .p2 {
     margin-top: 10px; }
+  .about img {
+    display: block; }
   .about .about-image {
     box-sizing: border-box;
     margin: 60px 0 80px 0;
-    height: 50%;
     width: 100%;
+    height: 50%;
     padding: 0;
     overflow: hidden;
     background-color: inherit;
     -webkit-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
     box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5); }
-  .about .about-img {
-    display: block; }
 
 .skills {
   padding: 20px 0 80px 10px;
@@ -233,6 +233,8 @@ header {
     background-color: #71c2f4;
     text-decoration: none;
     border: none; }
+  .work .projectlink {
+    color: blue; }
   .work .displayProjectsRight {
     width: 100%;
     min-height: 500px;
@@ -424,7 +426,7 @@ footer {
     left: 2.8%;
     height: 40%;
     width: 94%; } }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
   header {
     position: fixed;
     width: 100%;
@@ -453,9 +455,9 @@ footer {
     box-sizing: border-box; }
     .hero .heroContent {
       box-sizing: border-box;
-      max-width: 60%;
+      max-width: 80%;
       padding-top: 110px;
-      margin-left: 25%; }
+      margin-left: 15%; }
     .hero h1 {
       color: #fdfdfd;
       line-height: 1em;
@@ -464,7 +466,7 @@ footer {
 
   .about {
     box-sizing: border-box;
-    padding: 60px 60px; }
+    padding: 60px 0 60px 0; }
     .about .about-me {
       width: 100%; }
     .about h1 {
@@ -492,7 +494,7 @@ footer {
       -webkit-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
       -moz-box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5);
       box-shadow: -1px 1px 5px 5px rgba(0, 0, 0, 0.5); }
-    .about .about-img {
+    .about .about-image img {
       display: block; }
 
   .skills {
@@ -508,9 +510,10 @@ footer {
       height: 30px; }
 
   .work {
-    padding: 40px 80px; }
+    padding: 40px 0 80px 0; }
     .work .projectsLeft {
       width: 100%;
+      height: 800px;
       margin: 0 auto; }
     .work .projectsLeft h1 {
       font-size: 3em; }
@@ -519,7 +522,7 @@ footer {
       display: block;
       font-size: 2em;
       color: black;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       padding: 10px;
       line-height: 1.5em; }
     .work .projectsLeft button {
@@ -541,8 +544,9 @@ footer {
       text-decoration: none;
       border: none; }
     .work .displayProjectsRight {
+      box-sizing: border-box;
       width: 100%;
-      min-height: 500px;
+      height: 50px;
       margin: 0 auto;
       text-align: center;
       background-image: url("/assets/monitorBG3.jpg");
@@ -608,12 +612,12 @@ footer {
     footer img {
       width: 100%; }
     footer .contact-icons {
-      padding-top: 30px; }
+      padding-top: 20px; }
     footer .contact-icons .mail {
-      text-align: right; }
+      text-align: center; }
     footer .contact-icons .linkedin a {
       padding-top: 30px; }
     footer .contact-icons .github {
-      text-align: left; } }
+      text-align: center; } }
 
 /*# sourceMappingURL=newstylesheet.css.map */

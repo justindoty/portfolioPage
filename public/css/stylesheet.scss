@@ -235,12 +235,16 @@ h1 {
 .p2 {
     margin-top: 10px;
 }
+img {
+    display: block;
+
+}
 
 .about-image {
     box-sizing: border-box;
     margin: 60px 0 80px 0;
-    height: 50%;
     width: 100%;
+    height: 50%;
     padding: 0;
     overflow: hidden;
     background-color: inherit;
@@ -248,9 +252,7 @@ h1 {
     -moz-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
     box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
 }
-.about-img {
-    display: block;
-}
+
 }
 
 // ---------skills---------
@@ -320,6 +322,9 @@ h1 {
     border: none;
 }
 
+.projectlink {
+    color: blue;
+}
 
 .displayProjectsRight {
     width: 100%;
@@ -630,7 +635,7 @@ h1 {
 }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 420px) {
 
 header {
     position: fixed;
@@ -674,9 +679,9 @@ header {
     
 .heroContent {
     box-sizing: border-box;
-    max-width: 60%;
+    max-width: 80%;
     padding-top: 110px;
-    margin-left: 25%;
+    margin-left: 15%;
 }
 
 h1 {
@@ -692,7 +697,8 @@ h1 {
 
 .about {
     box-sizing: border-box;
-    padding: 60px 60px;
+    padding: 60px 0 60px 0;
+    
 .about-me {
     width: 100%;
 }
@@ -731,7 +737,7 @@ h1 {
     -moz-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
     box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.5);
 }
-.about-img {
+.about-image img {
     display: block;
 }
 }
@@ -760,10 +766,11 @@ h1 {
 // ----work-------
 
 .work {
-    padding: 40px 80px;
+    padding: 40px 0 80px 0;
 
 .projectsLeft {
     width: 100%;
+    height: 800px;
     margin: 0 auto;
 }
 
@@ -776,7 +783,7 @@ h1 {
     display: block;
     font-size: 2em;
     color: rgb(0, 0, 0);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     padding: 10px;
     line-height: 1.5em;
 }
@@ -805,8 +812,9 @@ h1 {
 
 
 .displayProjectsRight {
+    box-sizing: border-box;
     width: 100%;
-    min-height: 500px;
+    height: 50px;
     margin: 0 auto;
     text-align: center;
     background-image: url("/assets/monitorBG3.jpg");
@@ -901,16 +909,16 @@ img {
 }
 
 .contact-icons{
-   padding-top: 30px;
+   padding-top: 20px;
 }
 .contact-icons .mail {
-   text-align: right;
+   text-align: center;
 }
 .contact-icons .linkedin a {
    padding-top: 30px;
 }
 .contact-icons .github {
-   text-align:  left;
+    text-align: center;
 } 
 }
 }
