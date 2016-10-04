@@ -254,7 +254,8 @@ header {
     width: 94%; }
   .work .golf img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    border-radius: 5px; }
   .work .monitorDisplay button:focus {
     outline: 0;
     text-decoration: none; }
@@ -274,7 +275,8 @@ header {
     font-size: 5em; }
   .work .cti img {
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    border-radius: 5px; }
 
 footer {
   padding: 30px 30px;
@@ -346,7 +348,7 @@ footer {
     color: white; }
   .work .monitorDisplay {
     position: relative;
-    top: 2.2%;
+    top: 3%;
     left: 2.8%;
     height: 40%;
     width: 94%; }

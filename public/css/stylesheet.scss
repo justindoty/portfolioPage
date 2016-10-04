@@ -168,7 +168,7 @@ header {
         color: $body-color;
     }
     ul {
-        padding: 5px 10px 0 0;        
+        padding: 5px 10px 0 0;
         background-color: inherit;
     }
 }
@@ -188,7 +188,7 @@ header {
     -o-background-size: auto;
     background-size: auto;
     background-repeat: repeat;
-    
+
 .heroContent {
     box-sizing: border-box;
     max-width: 60%;
@@ -268,7 +268,7 @@ img {
 .skillsDiv li {
     margin: 10px;
     display: inline-block;
-  
+
 }
 .skillsImg {
     height: 45px;
@@ -352,6 +352,7 @@ img {
 .golf img {
     height: 100%;
     width: 100%;
+    border-radius: 5px;
 }
 .monitorDisplay button:focus {
     outline: 0;
@@ -381,6 +382,7 @@ img {
 .cti img {
     height: 100%;
     width: 100%;
+    border-radius: 5px;
 }
 }
 
@@ -433,7 +435,7 @@ img {
 }
 .contact-icons .github {
    text-align:  left;
-} 
+}
 }
 
 
@@ -443,7 +445,7 @@ img {
 .skills  {
    width: 80%;
    margin: 0 auto;
-    
+
 .skillsDiv li {
     margin: 20px;
 }
@@ -492,10 +494,11 @@ h1 {
 
 .monitorDisplay {
     position: relative;
-    top: 2.2%;
+    top: 3%;
     left: 2.8%;
     height: 40%;
     width: 94%;
+
 }
 
 .buttonDiv button {
@@ -553,8 +556,8 @@ h1 {
 
 @media screen and (max-width: 1024px) {
 .hero {
-    
-    
+
+
 .heroContent {
     box-sizing: border-box;
     max-width: 60%;
@@ -570,7 +573,7 @@ h1 {
 }
 //------------------------------------------------
 .about {
-  
+
 .about-me {
     width: 100%;
 }
@@ -650,7 +653,7 @@ header {
         font: 4em $logo-font;
         color: $body-color;
         padding-left: 70px;
-        
+
     }
     a:hover, li:hover {
         color:$main-color;
@@ -661,7 +664,7 @@ header {
         color: $body-color;
     }
     ul {
-        padding: 5px 0 0 60px;        
+        padding: 5px 0 0 60px;
         background-color: inherit;
     }
 }
@@ -676,7 +679,7 @@ header {
     min-height: 50%;
     box-sizing: border-box;
 
-    
+
 .heroContent {
     box-sizing: border-box;
     max-width: 80%;
@@ -698,7 +701,7 @@ h1 {
 .about {
     box-sizing: border-box;
     padding: 60px 0 60px 0;
-    
+
 .about-me {
     width: 100%;
 }
@@ -755,7 +758,7 @@ h1 {
 .skillsDiv li {
     margin: 10px;
     display: inline-block;
-  
+
 }
 .skillsImg {
     height: 30px;
@@ -919,6 +922,6 @@ img {
 }
 .contact-icons .github {
     text-align: center;
-} 
+}
 }
 }

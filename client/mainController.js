@@ -52,6 +52,7 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
       {image:'/assets/nodejslogo.png'},
       {image:'/assets/mongologo.png'},
       {image:'/assets/sasslogo.svg'},
+      {image:'/assets/foundationlogo.png'},
       {image:'/assets/Npmlogo.png'}
     ];
 
@@ -106,7 +107,7 @@ vm.images = images;
     } else {
       vm.showLink = false;
     }
-    
+
     console.log('num', num);
     vm.golfImages = golfImages.images[num];
     vm.gusaDesc = gusaDesc.desc[num];
@@ -114,7 +115,7 @@ vm.images = images;
     vm.golfImages = golfImages.images[0];
 
     var ctiImages = {
-      images: ['/assets/ctiEditTemplate.png','/assets/ctiUpload.png','/assets/ctiEditTemplate.png','/assets/ctiUpload.png']
+      images: ['/assets/ctihome.png','/assets/ctiUpload.png','/assets/ctiEditTemplate.png','/assets/ctiSentMail.png']
     }
     var ctiNum = 0;
     vm.nextCtiImageF = function() {
@@ -140,10 +141,10 @@ vm.images = images;
 // vm.myInterval = 3000;
 
 // var slides = ['assets/JustinDoty.jpg','assets/zoey2.jpg','assets/fishingWithCharlotte.jpg','assets/mountainView.jpg'];
-    
 
-//  vm.slide = slides[0]; 
-  
+
+//  vm.slide = slides[0];
+
 //  $interval(function(){
 //    if(vm.slide == slides[0])
 //        vm.slide = slides[1];
