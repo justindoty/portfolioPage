@@ -52,7 +52,7 @@ angular.module('app').controller('MainController', ['$http','$location','RouteSe
       {image:'/assets/nodejslogo.png'},
       {image:'/assets/mongologo.png'},
       {image:'/assets/sasslogo.svg'},
-      {image:'/assets/foundationlogo.png'},
+      {image:'/assets/foundation.png'},
       {image:'/assets/Npmlogo.png'}
     ];
 
