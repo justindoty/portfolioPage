@@ -79,7 +79,7 @@ vm.images = images;
   vm.ctiDesc = ctiDesc.desc[0];
 
   var golfImages = {
-    images: ['/assets/rewardsHome.png','/assets/rewardsPage.png','/assets/rewardsUse.png','/assets/rewardsDB.png']
+    images: ['/assets/rewardsHomeNew.png','/assets/gusaMainNew.png','/assets/rewardsPageNew.png','/assets/rewardsSent.png','/assets/rewardsDBNew.png']
   }
 
   var num = 0;
@@ -87,9 +87,9 @@ vm.images = images;
   vm.nextGolfImageB = function() {
     num--;
     if (num < 0) {
-      num = 3;
+      num = 5;
     }
-    if (num == 3) {
+    if (num == 5) {
       vm.showLink = true;
     }
     console.log('num', num);
@@ -99,10 +99,10 @@ vm.images = images;
 
   vm.nextGolfImageF = function() {
     num++;
-    if (num > 3) {
+    if (num > 5) {
       num = 0;
     }
-    if (num === 3 ) {
+    if (num === 5 ) {
       vm.showLink = true;
     } else {
       vm.showLink = false;
