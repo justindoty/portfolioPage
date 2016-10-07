@@ -61,8 +61,8 @@ vm.images = images;
   // vm.skillsImg2 = images.images[1];
 
   var gusaDesc = {
-    desc: ['This application was built for a Minnesota golf retail store. The store had a sales reward program that allowed customers to earn rewards that could be applied towards future purchases. The store used paper punch cards to keep track of these rewards. For every $10 a customer spends they receive a punch, after they accumulted 15 punches(fill up a card), they recieve $10 of their next purchase. This was a hastle to maintain and manage especially when some customers would accumulate 10 or more cards in a single purchase.',
-    'This application solves this problem by handling all of the calculations of the rewards as well as maintaining all of their customers and rewards data in one place. This also saves customers the hassel of having to keep track of their cards. After each sale, the application sends out an email with all of that customers rewards information',
+    desc: ['This application was built for a Minnesota golf retail store. The store had a sales reward program that allowed customers to earn rewards that could be applied towards future purchases. The store used paper punch cards to keep track of these rewards. For every $10 a customer spends they receive a punch, after they accumulated 15 punches(fill up a card), they receive $10 of their next purchase. This was a hassle to maintain and manage especially when some customers would accumulate 10 or more cards in a single purchase.',
+    'This application solves this problem by handling all of the calculations of the rewards as well as maintaining all of their customers and rewards data in one place. This also saves customers the hassle of having to keep track of their cards. After each sale, the application sends out an email with all of that customers rewards information',
     'This is a full stack application built using the MEAN stack( MongoDB, Express, Angular.JS, Node.JS).Other technologies include bootstrap, Angular UI bootstrap, Hogan.js, Nodemailer, and a few others.',
      'To checkout the application click on the link below.']
   }
@@ -87,9 +87,9 @@ vm.images = images;
   vm.nextGolfImageB = function() {
     num--;
     if (num < 0) {
-      num = 5;
+      num = 4;
     }
-    if (num == 5) {
+    if (num == 4) {
       vm.showLink = true;
     }
     console.log('num', num);
@@ -99,10 +99,10 @@ vm.images = images;
 
   vm.nextGolfImageF = function() {
     num++;
-    if (num > 5) {
+    if (num > 4) {
       num = 0;
     }
-    if (num === 5 ) {
+    if (num === 4) {
       vm.showLink = true;
     } else {
       vm.showLink = false;
